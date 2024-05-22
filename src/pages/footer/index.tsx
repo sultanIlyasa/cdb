@@ -3,11 +3,12 @@ import { CardFooter, CardContent, Card } from "@/components/ui/card";
 import { Icon } from "react-icons-kit";
 import exp from "constants";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <Card>
-      <CardFooter className="bg-indigo-900 p-4 flex flex-col grid md:grid-cols-2 lg:grid-cols-2">
+      <CardFooter className="bg-indigo-900 p-4 flex-col grid md:grid-cols-2 lg:grid-cols-2">
         <CardContent>
           <div className="">
             <div>
@@ -20,7 +21,7 @@ const Footer = () => {
                     PT. Cahaya Dua Berlian
                   </h2>
                   <p className="font-montserrat font-light text-base text-white text-[12px] text-left">
-                    Printing & Construction
+                    Konstruksi & Percetakan
                   </p>
                 </div>
               </a>
@@ -31,16 +32,24 @@ const Footer = () => {
           <div className="font-montserrat font-light text-base text-white text-[12px] text-right">
             <ul>
               <li>
-                <a>Home</a>
+                <Link href="/">
+                  <span className="block mb-1"> Home </span>
+                </Link>
               </li>
               <li>
-                <a>Our Product</a>
+                <Link href="/products">
+                  <span className="block mb-1"> Our Product </span>
+                </Link>
               </li>
               <li>
-                <a>About Us</a>
+                <Link href="/about">
+                  <span className="block mb-1"> About Us </span>
+                </Link>
               </li>
               <li>
-                <a>Contact Us</a>
+                <Link href="/contact">
+                  <span className="block mb-1"> Contact Us </span>
+                </Link>
               </li>
             </ul>
           </div>

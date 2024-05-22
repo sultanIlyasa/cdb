@@ -10,7 +10,7 @@ export const Banner = ({
   overlayClassName,
   className,
   autoplay = true,
-  direction = "up",
+  direction = "left", // Changed default direction to "left"
   duration = 5000,
 }: {
   images: string[];
@@ -19,7 +19,7 @@ export const Banner = ({
   overlayClassName?: string;
   className?: string;
   autoplay?: boolean;
-  direction?: "up" | "down";
+  direction?: "left" | "right"; // Changed to "left" and "right"
   duration?: number;
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -60,6 +60,7 @@ export const Banner = ({
       })
       .catch((error) => console.error("Failed to load images", error));
   };
+
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "ArrowRight") {
@@ -70,8 +71,7 @@ export const Banner = ({
     };
 
     window.addEventListener("keydown", handleKeyDown);
-    
-    // autoplay
+
     let interval: any;
     if (autoplay) {
       interval = setInterval(() => {
@@ -89,27 +89,27 @@ export const Banner = ({
     initial: {
       scale: 0,
       opacity: 0,
-      rotateX: 45,
+      rotateY: 45,
     },
     visible: {
       scale: 1,
-      rotateX: 0,
+      rotateY: 0,
       opacity: 1,
       transition: {
         duration: 0.5,
         ease: [0.645, 0.045, 0.355, 1.0],
       },
     },
-    upExit: {
+    leftExit: {
       opacity: 1,
-      y: "-150%",
+      x: "-150%",
       transition: {
         duration: 1,
       },
     },
-    downExit: {
+    rightExit: {
       opacity: 1,
-      y: "150%",
+      x: "150%",
       transition: {
         duration: 1,
       },
@@ -142,7 +142,7 @@ export const Banner = ({
             src={loadedImages[currentIndex]}
             initial="initial"
             animate="visible"
-            exit={direction === "up" ? "upExit" : "downExit"}
+            exit={direction === "left" ? "leftExit" : "rightExit"}
             variants={slideVariants}
             className="image h-full w-full absolute inset-0 object-cover object-center"
           />

@@ -14,10 +14,10 @@ export function OurSpeciality() {
     <div>
       <div className="text-center my-[45px]">
         <h4 className="text-[#ED3237] text-[20px] font-semibold">
-          OUR SPECIALITY
+          KEAHLIAN KAMI
         </h4>
         <h2 className="text-[#3E4095] text-[28px] font-bold">
-          Services We’re Offering
+          Jasa yang Kami Tawarkan
         </h2>
       </div>
       <div className="flex flex-row justify-center gap-5">
@@ -26,13 +26,13 @@ export function OurSpeciality() {
             <div className="pl-[58px] pt-[37px] pr-[70px]">
               <CardHeader>
                 <CardTitle className="text-[24px] text-[#A90F13] font-bold">
-                  Construction
+                  Konstruksi
                 </CardTitle>
                 <CardDescription className="text-[#000000] text-[16px] font-medium text-justify">
-                  Build with confidence. Our construction team is your partner
-                  in realizing your dreams. From concept to completion, we
-                  ensure seamless execution and superior results that stand the
-                  test of time.
+                  Membangun dengan keyakinan. Tim konstruksi kami adalah pilihan
+                  mitra dalam mewujudkan impian Anda. Dari konsep hingga
+                  penyelesaian, kami menjamin pelaksanaan yang lancar dan hasil
+                  unggul yang bertahan lama.
                 </CardDescription>
               </CardHeader>
             </div>
@@ -47,16 +47,16 @@ export function OurSpeciality() {
                   />
                 </div>
                 <div>
-                  <a className="text-[#ED3237] my-[18px] font-semibold" href="">
-                    Residential Buildings span →
+                  <a className="text-[#ED3237] mb-3 block font-semibold" href="">
+                    Desain & Konstruksi Indoor
                   </a>
                   <hr />
-                  <a className="text-[#ED3237] my-[18px] font-semibold" href="">
-                    Commercial Buildings →
+                  <a className="text-[#ED3237] mb-3 block font-semibold" href="">
+                    Instalasi
                   </a>
                   <hr />
-                  <a className="text-[#ED3237] my-[18px] font-semibold" href="">
-                    See More →
+                  <a className="text-[#ED3237] mb-3 block font-semibold" href="">
+                    Tampilkan Lebih Banyak
                   </a>
                 </div>
               </CardContent>
@@ -68,13 +68,13 @@ export function OurSpeciality() {
             <div className="pl-[58px] pt-[37px] pr-[70px]">
               <CardHeader>
                 <CardTitle className="text-[24px] text-[#1F204C] font-bold">
-                  Printing
+                  Percetakan
                 </CardTitle>
                 <CardDescription className="text-[#000000] text-[16px] font-medium text-justify">
-                  Our printing service offers vibrant colors, crisp black and
-                  white prints, and fast turnaround times. From business cards
-                  to banners, we ensure competitive pricing and lasting
-                  impressions.
+                  Layanan cetak kami memberikan warna yang cerah, cetakan hitam
+                  putih yang tajam, dan waktu pengerjaan yang cepat. Dari kartu
+                  bisnis hingga spanduk, kami memastikan harga kompetitif dan
+                  kesan yang melekat. impressions.
                 </CardDescription>
               </CardHeader>
             </div>
@@ -89,16 +89,16 @@ export function OurSpeciality() {
                   />
                 </div>
                 <div>
-                  <a className="text-[#3E4095] pb-[18px] font-semibold" href="">
-                    Banners & Signage →
+                  <a className="text-[#3E4095]  block mb-3 font-semibold" href="">
+                    Perlengkapan Kantor
                   </a>
                   <hr />
-                  <a className="text-[#3E4095] pb-[18px] font-semibold" href="">
-                    Packaging Solutions →
+                  <a className="text-[#3E4095] block mb-3 font-semibold" href="">
+                    Souvenir & Konveksi
                   </a>
                   <hr />
-                  <a className="text-[#3E4095] pb-[18px] font-semibold" href="">
-                    See More →
+                  <a className="text-[#3E4095] block mb-3 font-semibold" href="">
+                    Tampilkan Lebih Banyak
                   </a>
                 </div>
               </CardContent>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import * as React from "react";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -31,44 +32,56 @@ export default function Navbar() {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li>
-                <a>Home</a>
-              </li>
-              <li>
-                <a>Our Product</a>
-              </li>
-              <li>
-                <a>About Us</a>
-              </li>
-              <li>
-                <a>Contact Us</a>
-              </li>
+              <Link href="/">
+                <span>Home</span>
+              </Link>
+              <Link href="/">
+                <span>Our Product</span>
+              </Link>
+              <Link href="/about">
+                <span>About Us</span>
+              </Link>
+              <Link href="/contact">
+                <span>Contact Us</span>
+              </Link>
             </ul>
           </div>
 
-          <a className="btn btn-ghost hover:bg-transparent">
+          <div className="btn btn-ghost hover:bg-transparent">
             <div className="">
               <Image src="/cdb.png" width={67} height={45} alt={"logo"} />
             </div>
             <div className="">
-              <h2 className="text-[#000000] text-[16px] text-left">PT. Cahaya Dua Berlian</h2>
-              <p className="text-[#666666] text-[12px] text-left">Printing & Construction</p>
+              <h2 className="text-[#000000] text-[16px] text-left">
+                PT. Cahaya Dua Berlian
+              </h2>
+              <p className="text-[#666666] text-[12px] text-left">
+                Konstruksi & Percetakan
+              </p>
             </div>
-          </a>
+          </div>
         </div>
         <div className="navbar-end hidden lg:flex ">
           <ul className="menu menu-horizontal px-1 text-[#3E4095]">
             <li>
-              <a>Home</a>
+              <Link href="/">
+                <span> Home </span>
+              </Link>
             </li>
             <li>
-              <a>Our Product</a>
+              <Link href="/products">
+                <span> Our Product </span>
+              </Link>
             </li>
             <li>
-              <a>About Us</a>
+              <Link href="/about">
+                <span> About Us </span>
+              </Link>
             </li>
             <li>
-              <a>Contact Us</a>
+              <Link href="/contact">
+                <span> Contact Us </span>
+              </Link>
             </li>
           </ul>
         </div>
