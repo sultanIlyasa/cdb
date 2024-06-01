@@ -1,153 +1,35 @@
 "use client";
-import { cn } from "@/components/utils/cn";
-import { motion, AnimatePresence } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { ImagesSlider } from "@/components/ui/images-slider";
 
-export const Banner = ({
-  images,
-  children,
-  overlay = true,
-  overlayClassName,
-  className,
-  autoplay = true,
-  direction = "up",
-  duration = 5000,
-}: {
-  images: string[];
-  children: React.ReactNode;
-  overlay?: React.ReactNode;
-  overlayClassName?: string;
-  className?: string;
-  autoplay?: boolean;
-  direction?: "up" | "down";
-  duration?: number;
-}) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [loading, setLoading] = useState(false);
-  const [loadedImages, setLoadedImages] = useState<string[]>([]);
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex + 1 === images.length ? 0 : prevIndex + 1
-    );
-  };
-
-  const handlePrevious = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-
-  useEffect(() => {
-    loadImages();
-  }, []);
-
-  const loadImages = () => {
-    setLoading(true);
-    const loadPromises = images.map((image) => {
-      return new Promise((resolve, reject) => {
-        const img = new Image();
-        img.src = image;
-        img.onload = () => resolve(image);
-        img.onerror = reject;
-      });
-    });
-
-    Promise.all(loadPromises)
-      .then((loadedImages) => {
-        setLoadedImages(loadedImages as string[]);
-        setLoading(false);
-      })
-      .catch((error) => console.error("Failed to load images", error));
-  };
-  useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "ArrowRight") {
-        handleNext();
-      } else if (event.key === "ArrowLeft") {
-        handlePrevious();
-      }
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-    
-    // autoplay
-    let interval: any;
-    if (autoplay) {
-      interval = setInterval(() => {
-        handleNext();
-      }, duration);
-    }
-
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-      clearInterval(interval);
-    };
-  }, []);
-
-  const slideVariants = {
-    initial: {
-      scale: 0,
-      opacity: 0,
-      rotateX: 45,
-    },
-    visible: {
-      scale: 1,
-      rotateX: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        ease: [0.645, 0.045, 0.355, 1.0],
-      },
-    },
-    upExit: {
-      opacity: 1,
-      y: "-150%",
-      transition: {
-        duration: 1,
-      },
-    },
-    downExit: {
-      opacity: 1,
-      y: "150%",
-      transition: {
-        duration: 1,
-      },
-    },
-  };
-
-  const areImagesLoaded = loadedImages.length > 0;
+export function Banner() {
+  const images = ["/banner1.png", "/banner2.png", "/banner3.png"];
 
   return (
-    <div
-      className={cn(
-        "overflow-hidden h-full w-full relative flex items-center justify-center",
-        className
-      )}
-      style={{
-        perspective: "1000px",
-      }}
-    >
-      {areImagesLoaded && children}
-      {areImagesLoaded && overlay && (
-        <div
-          className={cn("absolute inset-0 bg-black/60 z-40", overlayClassName)}
-        />
-      )}
+    <ImagesSlider className="h-[40rem]" images={images} duration={5000}>
+      <div className="z-50 flex flex-col justify-center md:flex">
+        <h1 className="font-bold  md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+          WE SERVE BETTER AND FASTER!
+        </h1>
+        <p className="text-[#F5F5F5] text-center text-[24px]">
+          Dari membangun pondasi yang kokoh hingga menciptakan cetakan
+          berkualitas tinggi, kami adalah <br />
+          <span className="text-yellow-500">solusi terbaik</span> untuk semua kebutuhan
+          <span className="text-yellow-500"> konstruksi</span> dan
+          <span className="text-yellow-500"> percetakan</span>. Percayakan
+          kepada kami untuk <br />
+          mewujudkan impian Anda, setiap langkah dalam prosesnya.
+        </p>
 
-      {areImagesLoaded && (
-        <AnimatePresence>
-          <motion.img
-            key={currentIndex}
-            src={loadedImages[currentIndex]}
-            initial="initial"
-            animate="visible"
-            exit={direction === "up" ? "upExit" : "downExit"}
-            variants={slideVariants}
-            className="image h-full w-full absolute inset-0 object-cover object-center"
-          />
-        </AnimatePresence>
-      )}
-    </div>
+        <div className="flex flex-row justify-center gap-5">
+          <button className="w-[258px] h-[66px] px-4 py-2 backdrop-blur-sm bg-[#3B71CA]  text-white text-center rounded-[20px] relative mt-4 hover:bg-[#F3F8FF] hover:text-[#0F6FFF]">
+            <span>Lihat Produk Kami</span>
+          </button>
+          <button className="w-[258px] h-[66px] px-4 py-2 backdrop-blur-sm bg-[#3B71CA]  text-white text-center rounded-[20px] relative mt-4 hover:bg-[#F3F8FF] hover:text-[#0F6FFF]">
+            <span>Hubungi Kami</span>
+          </button>
+        </div>
+      </div>
+    </ImagesSlider>
   );
-};
+}

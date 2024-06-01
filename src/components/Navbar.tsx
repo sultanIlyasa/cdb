@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import * as React from "react";
 
 export default function Navbar() {
@@ -32,13 +33,13 @@ export default function Navbar() {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Home</a>
+                <Link href={"./"}>Home</Link>
               </li>
               <li>
                 <a>Our Product</a>
               </li>
               <li>
-                <a>About Us</a>
+                <Link href={"./about"}>About Us</Link>
               </li>
               <li>
                 <a>Contact Us</a>
@@ -48,24 +49,28 @@ export default function Navbar() {
 
           <a className="btn btn-ghost hover:bg-transparent">
             <div className="">
-              <Image src="/cdb.png" width={67} height={45} alt={"logo"} />
+                <Image src="/cdb.png" width={67} height={45} alt={"logo"} />
             </div>
             <div className="">
-              <h2 className="text-[#000000] text-[16px] text-left">PT. Cahaya Dua Berlian</h2>
-              <p className="text-[#666666] text-[12px] text-left">Printing & Construction</p>
+              <h2 className="text-[#000000] text-[16px] text-left">
+                PT. Cahaya Dua Berlian
+              </h2>
+              <p className="text-[#666666] text-[12px] text-left">
+                Printing & Construction
+              </p>
             </div>
           </a>
         </div>
         <div className="navbar-end hidden lg:flex ">
           <ul className="menu menu-horizontal px-1 text-[#3E4095]">
             <li>
-              <a>Home</a>
+              <Link href={"./"}>Home</Link>
             </li>
             <li>
               <a>Our Product</a>
             </li>
             <li>
-              <a>About Us</a>
+              <Link href={"./about"}>About Us</Link>
             </li>
             <li>
               <a>Contact Us</a>

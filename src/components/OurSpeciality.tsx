@@ -14,97 +14,99 @@ export function OurSpeciality() {
     <div>
       <div className="text-center my-[45px]">
         <h4 className="text-[#ED3237] text-[20px] font-semibold">
-          OUR SPECIALITY
+          KEAHLIAN KAMI
         </h4>
         <h2 className="text-[#3E4095] text-[28px] font-bold">
-          Services We’re Offering
+          Jasa yang Kami Tawarkan
         </h2>
       </div>
-      <div className="flex flex-row justify-center gap-5">
-        <div>
-          <Card className="w-[580px] h-[410px] rounded-[16px] bg-[#FDECED] border-none">
-            <div className="pl-[58px] pt-[37px] pr-[70px]">
-              <CardHeader>
-                <CardTitle className="text-[24px] text-[#A90F13] font-bold">
-                  Construction
-                </CardTitle>
-                <CardDescription className="text-[#000000] text-[16px] font-medium text-justify">
-                  Build with confidence. Our construction team is your partner
-                  in realizing your dreams. From concept to completion, we
-                  ensure seamless execution and superior results that stand the
-                  test of time.
-                </CardDescription>
-              </CardHeader>
-            </div>
+      <div className="flex flex-row justify-center gap-[47px] mb-[85px]">
+        <Card className="w-[576px] h-[366px] rounded-[16px] bg-[#FDECED] border-none">
+          <CardHeader className="px-[30px] py-[30px]">
+            <CardTitle className="text-[24px] text-[#A90F13] font-bold">
+              Konstruksi
+            </CardTitle>
+            <CardDescription className="text-[#000000] text-[16px] font-medium text-justify">
+              Membangun dengan keyakinan. Tim konstruksi kami adalah pilihan
+              mitra dalam mewujudkan impian Anda. Dari konsep hingga
+              penyelesaian, kami menjamin pelaksanaan yang lancar dan hasil
+              unggul yang bertahan lama.
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="flex flex-row px-[30px] pb-[30px] gap-[30px]">
             <div>
-              <CardContent className="flex flex-row justify-center gap-5">
-                <div>
-                  <img
-                    className="rounded-[10px]"
-                    src="/construction.png"
-                    width={166}
-                    height={152}
-                  />
-                </div>
-                <div>
-                  <a className="text-[#ED3237] my-[18px] font-semibold" href="">
-                    Residential Buildings span →
-                  </a>
-                  <hr />
-                  <a className="text-[#ED3237] my-[18px] font-semibold" href="">
-                    Commercial Buildings →
-                  </a>
-                  <hr />
-                  <a className="text-[#ED3237] my-[18px] font-semibold" href="">
-                    See More →
-                  </a>
-                </div>
-              </CardContent>
+              <img
+                className="rounded-[10px]"
+                src="/konstruksi.png"
+                width={160}
+                height={152}
+              />
             </div>
-          </Card>
-        </div>
-        <div>
-          <Card className="w-[580px] h-[410px] rounded-[16px] bg-[#DBDBF0] border-none">
-            <div className="pl-[58px] pt-[37px] pr-[70px]">
-              <CardHeader>
-                <CardTitle className="text-[24px] text-[#1F204C] font-bold">
-                  Printing
-                </CardTitle>
-                <CardDescription className="text-[#000000] text-[16px] font-medium text-justify">
-                  Our printing service offers vibrant colors, crisp black and
-                  white prints, and fast turnaround times. From business cards
-                  to banners, we ensure competitive pricing and lasting
-                  impressions.
-                </CardDescription>
-              </CardHeader>
+            <div className="flex flex-col w-[258px]">
+              <a
+                className="text-[#ED3237] pb-[15px] font-semibold underline border-b-2 border-b-white"
+                href=""
+              >
+                Design & Konstruksi Indoor
+              </a>
+              <a
+                className="text-[#ED3237] py-[15px] font-semibold underline border-b-2 border-b-white"
+                href=""
+              >
+                Instalasi
+              </a>
+              <a
+                className="text-[#ED3237] pt-[15px] font-semibold underline"
+                href=""
+              >
+                Tampilkan Lebih Banyak
+              </a>
             </div>
+          </CardContent>
+        </Card>
+        <Card className="w-[576px] h-[366px] rounded-[16px] bg-[#DBDBF0] border-none">
+          <CardHeader className="px-[30px] py-[30px]">
+            <CardTitle className="text-[24px] text-[#1F204C] font-bold">
+              Percetakan
+            </CardTitle>
+            <CardDescription className="text-[#000000] text-[16px] font-medium text-justify">
+              Layanan cetak kami memberikan warna yang cerah, cetakan hitam
+              putih yang tajam, dan waktu pengerjaan yang cepat. Dari kartu
+              bisnis hingga spanduk, kami memastikan harga kompetitif dan kesan
+              yang melekat.
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="flex flex-row px-[30px] pb-[30px] gap-[30px]">
             <div>
-              <CardContent className="flex flex-row justify-center gap-5">
-                <div>
-                  <img
-                    className="rounded-[10px]"
-                    src="/printing.png"
-                    width={166}
-                    height={152}
-                  />
-                </div>
-                <div>
-                  <a className="text-[#3E4095] pb-[18px] font-semibold" href="">
-                    Banners & Signage →
-                  </a>
-                  <hr />
-                  <a className="text-[#3E4095] pb-[18px] font-semibold" href="">
-                    Packaging Solutions →
-                  </a>
-                  <hr />
-                  <a className="text-[#3E4095] pb-[18px] font-semibold" href="">
-                    See More →
-                  </a>
-                </div>
-              </CardContent>
+              <img
+                className="rounded-[10px]"
+                src="/percetakan.png"
+                width={160}
+                height={152}
+              />
             </div>
-          </Card>
-        </div>
+            <div className="flex flex-col w-[258px]">
+              <a
+                className="text-[#3E4095] pb-[15px] font-semibold underline border-b-2 border-b-white"
+                href=""
+              >
+                Perlengkapan Kantor
+              </a>
+              <a
+                className="text-[#3E4095] py-[15px] font-semibold underline border-b-2 border-b-white"
+                href=""
+              >
+                Souvenir & Konveksi
+              </a>
+              <a
+                className="text-[#3E4095] pt-[15px] font-semibold underline"
+                href=""
+              >
+                Tampilkan Lebih Banyak
+              </a>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </div>
   );
