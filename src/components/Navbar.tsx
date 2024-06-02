@@ -36,7 +36,7 @@ export default function Navbar() {
                 <Link href={"./"}>Home</Link>
               </li>
               <li>
-                <a>Our Product</a>
+                <Link href={"./product"}>Our Product</Link>
               </li>
               <li>
                 <Link href={"./about"}>About Us</Link>
@@ -67,7 +67,7 @@ export default function Navbar() {
               <Link href={"./"}>Home</Link>
             </li>
             <li>
-              <a>Our Product</a>
+              <Link href={"./product"}>Our Product</Link>
             </li>
             <li>
               <Link href={"./about"}>About Us</Link>
