@@ -16,7 +16,7 @@ export function Construction() {
       <div className="grid grid-cols-2 justify-center gap-[25px] w-[873px] mx-auto mb-[67px]">
         <Card className="w-[424px] h-[180px] border-none">
           <div className="relative text-center text-white rounded-2xl block overflow-hidden">
-            <a href="">
+            <a href="./product-design-indoor">
               <img
                 src="./construction1.png"
                 alt="cons1"
