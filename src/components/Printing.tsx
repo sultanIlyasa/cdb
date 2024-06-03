@@ -42,7 +42,7 @@ export function Printing() {
         </Card>
         <Card className="w-[424px] h-[180px] border-none">
           <div className="relative text-center text-white rounded-2xl block overflow-hidden">
-            <a href="">
+            <a href="./product-kemasan">
               <img
                 src="./printing3.png"
                 alt="print3"
