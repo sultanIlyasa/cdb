@@ -30,7 +30,7 @@ export function Construction() {
         </Card>
         <Card className="w-[424px] h-[180px] border-none">
           <div className="relative text-center text-white rounded-2xl block overflow-hidden">
-            <a href="">
+            <a href="./product-instalasi">
               <img
                 src="./construction2.png"
                 alt="cons1"
