@@ -14,7 +14,7 @@ export function Printing() {
       <div className="grid grid-cols-2 justify-center gap-[25px] w-[873px] mx-auto">
         <Card className="w-[424px] h-[180px] border-none">
           <div className="relative text-center text-white rounded-2xl block overflow-hidden">
-            <a href="">
+            <a href="./product-souvenir-konveksi">
               <img
                 src="./printing1.png"
                 alt="print1"
