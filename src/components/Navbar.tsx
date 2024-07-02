@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import * as React from "react";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -47,7 +48,7 @@ export default function Navbar() {
             </ul>
           </div>
 
-          <a className="btn btn-ghost hover:bg-transparent">
+          <div className="btn btn-ghost hover:bg-transparent">
             <div className="">
                 <Image src="/cdb.png" width={67} height={45} alt={"logo"} />
             </div>
@@ -56,10 +57,10 @@ export default function Navbar() {
                 PT. Cahaya Dua Berlian
               </h2>
               <p className="text-[#666666] text-[12px] text-left">
-                Printing & Construction
+                Konstruksi & Percetakan
               </p>
             </div>
-          </a>
+          </div>
         </div>
         <div className="navbar-end hidden lg:flex ">
           <ul className="menu menu-horizontal px-1 text-[#3E4095]">
@@ -73,7 +74,9 @@ export default function Navbar() {
               <Link href={"./about"}>About Us</Link>
             </li>
             <li>
-              <a>Contact Us</a>
+              <Link href="/contact">
+                <span> Contact Us </span>
+              </Link>
             </li>
           </ul>
         </div>
