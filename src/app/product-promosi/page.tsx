@@ -19,6 +19,7 @@ export default function ProductPromosiPage() {
 
     fetchPromosiPage();
   }, []);
+  
   return (
     <main className="">
       <PromosiCarousel />
