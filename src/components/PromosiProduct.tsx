@@ -12,7 +12,7 @@ export function PromosiProduct() {
         <h4 className="text-[#3E4095] text-[28px] font-bold">Produk Kami</h4>
       </div>
       <div className="grid grid-cols-3 gap-[30px] mb-[87px] w-[909px] mx-auto">
-        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./Flyer.png"
@@ -24,7 +24,7 @@ export function PromosiProduct() {
             Flyer
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./Booklet.png"
@@ -36,7 +36,7 @@ export function PromosiProduct() {
             Booklet
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./Banner.png"

@@ -20,9 +20,14 @@ const Faq = () => {
         <Card className="p-4 rounded-lg  flex-col justify-center ">
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
-              <AccordionTrigger>Pertanyaan 1</AccordionTrigger>
+              <AccordionTrigger>
+                Apa saja layanan yang ditawarkan oleh perusahaan kami?
+              </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Kami menawarkan layanan konstruksi seperti pembangunan gedung,
+                renovasi, dan desain interior. Untuk percetakan, kami
+                menyediakan layanan cetak offset, digital printing, dan large
+                format printing.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -30,9 +35,13 @@ const Faq = () => {
         <Card className="p-4 rounded-lg flex flex-col justify-center">
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
-              <AccordionTrigger>Pertanyaan 2</AccordionTrigger>
+              <AccordionTrigger className="text-left text-xs">
+                Berapa lama pengalaman perusahaan kami di bidang konstruksi dan
+                percetakan?
+              </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Perusahaan kami telah beroperasi selama 5 tahun di bidang
+                konstruksi dan 15 tahun di bidang percetakan.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -40,9 +49,13 @@ const Faq = () => {
         <Card className="p-4 rounded-lg flex flex-col justify-center">
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
-              <AccordionTrigger>Pertanyaan 3</AccordionTrigger>
+              <AccordionTrigger>
+                Bagaimana proses pemesanan layanan konstruksi?
+              </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Proses dimulai dengan konsultasi, dilanjutkan dengan survei
+                lokasi, perancangan, penawaran harga, persetujuan kontrak, dan
+                pelaksanaan proyek.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -50,9 +63,12 @@ const Faq = () => {
         <Card className="p-4 rounded-lg flex flex-col justify-center">
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
-              <AccordionTrigger>Pertanyaan 4</AccordionTrigger>
+              <AccordionTrigger>
+                Apa jenis bahan cetakan yang dapat Anda tangani?
+              </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Kami dapat menangani berbagai jenis bahan cetakan, termasuk
+                kertas, karton, vinyl, dan bahan khusus lainnya.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -60,9 +76,12 @@ const Faq = () => {
         <Card className="p-4 rounded-lg flex flex-col justify-center">
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
-              <AccordionTrigger>Pertanyaan 5</AccordionTrigger>
+              <AccordionTrigger>
+                Apakah Anda menyediakan layanan desain grafis?
+              </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Ya, kami memiliki tim desainer grafis yang dapat membantu Anda
+                merancang materi cetak sesuai kebutuhan.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -70,9 +89,12 @@ const Faq = () => {
         <Card className="p-4 rounded-lg flex flex-col justify-center">
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
-              <AccordionTrigger>Pertanyaan 6</AccordionTrigger>
+              <AccordionTrigger>
+                Bagaimana cara mendapatkan penawaran harga?
+              </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Anda dapat menghubungi kami melalui telepon, email, atau mengisi
+                formulir permintaan penawaran di website kami.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

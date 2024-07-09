@@ -23,9 +23,9 @@ const Slideshow = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen ">
-      <div className="container mx-[190px] py-[50px]  bg-gradient-to-br from-[#D1D1FA] via-[#7374C5] to-[#F7A1A4] rounded-lg">
+      <div className=" w-[800px] h-[450px] px-20  mx-auto bg-gradient-to-br from-[#D1D1FA] via-[#7374C5] to-[#F7A1A4] rounded-lg">
         <div>
-          <h2 className="text-white font-bold text-4xl mb-[1px] ">
+          <h2 className="text-white font-bold text-xl mb-4 mt-4">
             Company Profile
           </h2>
         </div>

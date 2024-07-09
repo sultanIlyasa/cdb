@@ -12,7 +12,7 @@ export function PerlengkapanKantorProduct() {
         <h4 className="text-[#3E4095] text-[28px] font-bold">Produk Kami</h4>
       </div>
       <div className="grid grid-cols-4 gap-[30px] mb-[87px] w-[1241px] mx-auto">
-        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./PerlengkapanKantorProduct1.png"
@@ -24,7 +24,7 @@ export function PerlengkapanKantorProduct() {
             Buku Agenda
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./PerlengkapanKantorProduct2.png"
@@ -32,11 +32,11 @@ export function PerlengkapanKantorProduct() {
                 className="w-[263px] h-[200px] rounded-[5px] object-cover"
               />
           </div>
-          <CardTitle className="text-[16px] text-[#3E3E3E] font-semibold text-center px-[10px] pt-[5px] pb-[15px]">
+          <CardTitle className="text-[16px] text-[#3E3E3E] font-semibold text-center px-[10px] pt-[5px] pb-[15px] ">
             Kartu Ucapan
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./PerlengkapanKantorProduct3.png"
@@ -48,7 +48,7 @@ export function PerlengkapanKantorProduct() {
             ID Card
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./PerlengkapanKantorProduct4.png"
@@ -60,7 +60,7 @@ export function PerlengkapanKantorProduct() {
             Amplop
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./PerlengkapanKantorProduct5.png"
@@ -72,7 +72,7 @@ export function PerlengkapanKantorProduct() {
             Angpao
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./PerlengkapanKantorProduct6.png"
@@ -84,7 +84,7 @@ export function PerlengkapanKantorProduct() {
             Brosur
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./PerlengkapanKantorProduct7.png"
@@ -96,7 +96,7 @@ export function PerlengkapanKantorProduct() {
             Kop Surat
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./PerlengkapanKantorProduct8.png"
@@ -108,7 +108,7 @@ export function PerlengkapanKantorProduct() {
             Lanyard
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./PerlengkapanKantorProduct9.png"
@@ -120,7 +120,7 @@ export function PerlengkapanKantorProduct() {
             Kartu Nama
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./PerlengkapanKantorProduct10.png"
@@ -132,7 +132,7 @@ export function PerlengkapanKantorProduct() {
             Map Folder
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./PerlengkapanKantorProduct11.png"
@@ -144,7 +144,7 @@ export function PerlengkapanKantorProduct() {
             Kartu Member
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./PerlengkapanKantorProduct12.png"
@@ -156,7 +156,7 @@ export function PerlengkapanKantorProduct() {
             Kalender
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[263px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./PerlengkapanKantorProduct13.png"

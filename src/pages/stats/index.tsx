@@ -15,7 +15,7 @@ const stats = () => {
       <div className=" grid justify-center  md:grid-cols-2 lg:grid-cols-2 gap-4">
         <Card className="border-none bg-[#FAF7F7] mx-auto">
           <CardHeader className="flex flex-row items-center">
-            <CardTitle className="text-sm font-medium font-montserrat leading-6 text-left">
+            <CardTitle className="text-sm font-medium font-montserrat leading-6 text-left px-[4px]">
               <div className="text-[#ED3237]">STATISTIK</div>
             </CardTitle>
           </CardHeader>
@@ -78,7 +78,7 @@ const stats = () => {
             <div className="mx-10 text-6xl content-center font-semibold text-[#7374C5] ">
               98%
             </div>
-            <p>Tahun Berpengalaman</p>
+            <p>Tingkat Kepuasan</p>
           </CardContent>
         </Card>
       </div>

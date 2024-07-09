@@ -12,7 +12,7 @@ export function KemasanProduct() {
         <h4 className="text-[#3E4095] text-[28px] font-bold">Produk Kami</h4>
       </div>
       <div className="grid grid-cols-4 gap-[30px] mb-[87px] w-[1241px] mx-auto">
-        <Card className="w-[283px] h-[287px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[287px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./KemasanProduct1.png"
@@ -25,7 +25,7 @@ export function KemasanProduct() {
             <br/>Bahan Kardus Gelombang
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[287px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[287px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./KemasanProduct2.png"
@@ -37,7 +37,7 @@ export function KemasanProduct() {
             Kotak Produk<br/>Bahan Keras
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[287px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[287px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./KemasanProduct3.png"
@@ -49,7 +49,7 @@ export function KemasanProduct() {
             Kotak Produk<br/>Bahan Keras + Pita Tarik
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[287px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[287px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./KemasanProduct4.png"
@@ -61,7 +61,7 @@ export function KemasanProduct() {
             Paper Bag Bahan Kertas
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[287px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[287px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./KemasanProduct5.png"
@@ -73,7 +73,7 @@ export function KemasanProduct() {
             Kemasan Botol
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[287px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[287px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./KemasanProduct6.png"
@@ -85,7 +85,7 @@ export function KemasanProduct() {
             Kotak Hampers
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[287px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[287px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./KemasanProduct7.png"
@@ -97,7 +97,7 @@ export function KemasanProduct() {
             Kertas Sampul
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[287px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[287px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./KemasanProduct8.png"
@@ -109,7 +109,7 @@ export function KemasanProduct() {
             Paper Bag
           </CardTitle>
         </Card>
-        <Card className="w-[283px] h-[287px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col">
+        <Card className="w-[283px] h-[287px] rounded-[10px] bg-[#FFFFFF] border-[0.5px] flex flex-col shadow-xl">
           <div className="px-[10px] py-[10px]">
             <img
                 src="./KemasanProduct9.png"

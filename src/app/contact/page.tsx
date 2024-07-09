@@ -131,8 +131,8 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="mb-6 mr-7">
-                        <label htmlFor="email" className="block mt-4 mb-0.5 text-sm font-semibold text-gray-900">Pesan</label>
-                        <input type="email" id="email" className="pb-2 text-[#000000] text-sm border-b border-[#8D8D8D] w-full bg-transparent " placeholder="Tulis pesan Anda..." required />
+                        <label htmlFor="pesan" className="block mt-4 mb-0.5 text-sm font-semibold text-gray-900">Pesan</label>
+                        <input type="text" id="text" className="pb-2 text-[#000000] text-sm border-b border-[#8D8D8D] w-full bg-transparent " placeholder="Tulis pesan Anda..." required />
                     </div> 
                     <div className="grid justify-items-end mt-20 mr-7">
                         <div>
