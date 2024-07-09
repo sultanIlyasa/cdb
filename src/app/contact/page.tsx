@@ -1,5 +1,8 @@
-"use client";
-import React from "react";
+
+"use client"
+import React, { useState, useEffect } from 'react';
+import { fetchData } from "../../lib/api/fetchData";
+import { Page } from '../../lib/interface/interface';
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import { Icon } from "react-icons-kit";
@@ -41,6 +44,18 @@ const Contact = () => {
         // Add more styles for other images as needed
       };
     
+      const [data, setData] = useState<Page | null>(null);
+      const [error, setError] = useState<string | null>(null);
+    
+      useEffect(() => {
+        const fetchContactPage = async () => {
+          const endpoint = 'http://localhost:3000/api/pages/668bb16754e5beab663e25d0?locale=undefined&draft=false&depth=1';
+          const dataFetch = await fetchData<Page>(endpoint, setError);
+          setData(dataFetch);
+        };
+    
+        fetchContactPage();
+      }, []);
   return (
     <div>
       <>

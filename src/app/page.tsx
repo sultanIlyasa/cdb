@@ -1,13 +1,13 @@
 "use client"
+import React, { useState, useEffect } from 'react';
+import { fetchData } from "../lib/api/fetchData";
+import { Page } from "../lib/interface/interface";
 import { OurSpeciality } from "@/pages/ourspeciality";
 import Stats from "@/pages/stats";
 import Faq from "@/pages/faq";
 import Wcu from "@/pages/wcu";
 import { Banner } from "@/components/Banner";
 import Slideshow from "@/components/slideshow";
-import React, { useState, useEffect } from 'react';
-import { fetchData } from "../lib/api/fetchData";
-import { Page } from "../lib/interface/interface";
 
 export default function Home() {
     const [data, setData] = useState<Page | null>(null);

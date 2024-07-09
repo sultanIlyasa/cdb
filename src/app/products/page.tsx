@@ -1,4 +1,7 @@
-import React from "react";
+"use client"
+import React, { useState, useEffect } from 'react';
+import { fetchData } from "../../lib/api/fetchData";
+import { Page } from '../../lib/interface/interface';
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import {
@@ -8,7 +11,24 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 
-const Products = () => {
+
+
+
+const Products = () => {  
+  
+  const [data, setData] = useState<Page | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchProductPage = async () => {
+      const endpoint = 'http://localhost:3000/api/pages/668bb16754e5beab663e25d0?locale=undefined&draft=false&depth=1';
+      const homePageData = await fetchData<Page>(endpoint, setError);
+      setData(homePageData);
+    };
+
+    fetchProductPage();
+  }, []);
+
   return (
     <div>
       <>
