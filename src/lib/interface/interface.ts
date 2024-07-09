@@ -45,229 +45,231 @@ export interface Config {
    * via the `definition` "pages".
    */
   export interface Page {
-    id: string;
-    title: string;
-    slug?: string | null;
-    description?: string | null;
-    body?:
-      | (
-          | {
-              header: {
-                title: string;
-                subTitle?: string | null;
-                description?: string | null;
-              };
-              links?:
-                | {
-                    link: {
-                      type?: ('button' | 'link') | null;
-                      title: string;
-                      href: string;
-                      collectionToShow?:
-                        | (
-                            | {
+    docs : [{
+        id: string;
+        title: string;
+        slug?: string | null;
+        description?: string | null;
+        body?:
+          | (
+              | {
+                  header: {
+                    title: string;
+                    subTitle?: string | null;
+                    description?: string | null;
+                  };
+                  links?:
+                    | {
+                        link: {
+                          type?: ('button' | 'link') | null;
+                          title: string;
+                          href: string;
+                          collectionToShow?:
+                            | (
+                                | {
+                                    relationTo: 'categories';
+                                    value: string | Category;
+                                  }
+                                | {
+                                    relationTo: 'products';
+                                    value: string | Product;
+                                  }
+                                | {
+                                    relationTo: 'contacts';
+                                    value: string | Contact;
+                                  }
+                              )[]
+                            | null;
+                        };
+                        id?: string | null;
+                      }[]
+                    | null;
+                  images?:
+                    | {
+                        title?: string | null;
+                        image: string | Media;
+                        caption?: string | null;
+                        id?: string | null;
+                      }[]
+                    | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 'heroBlock';
+                }
+              | {
+                  header: {
+                    title: string;
+                    subTitle?: string | null;
+                    description?: string | null;
+                  };
+                  files?:
+                    | {
+                        title?: string | null;
+                        file: string | Media;
+                        caption?: string | null;
+                        id?: string | null;
+                      }[]
+                    | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 'fileBlock';
+                }
+              | {
+                  header: {
+                    title: string;
+                    subTitle?: string | null;
+                    description?: string | null;
+                  };
+                  cards?:
+                    | {
+                        card: {
+                          title: string;
+                          description?: string | null;
+                          collectionToShow?:
+                            | ({
                                 relationTo: 'categories';
                                 value: string | Category;
-                              }
-                            | {
+                              } | null)
+                            | ({
                                 relationTo: 'products';
                                 value: string | Product;
-                              }
-                            | {
+                              } | null)
+                            | ({
                                 relationTo: 'contacts';
                                 value: string | Contact;
-                              }
-                          )[]
-                        | null;
-                    };
-                    id?: string | null;
-                  }[]
-                | null;
-              images?:
-                | {
-                    title?: string | null;
-                    image: string | Media;
-                    caption?: string | null;
-                    id?: string | null;
-                  }[]
-                | null;
-              id?: string | null;
-              blockName?: string | null;
-              blockType: 'heroBlock';
-            }
-          | {
-              header: {
-                title: string;
-                subTitle?: string | null;
-                description?: string | null;
-              };
-              files?:
-                | {
-                    title?: string | null;
-                    file: string | Media;
-                    caption?: string | null;
-                    id?: string | null;
-                  }[]
-                | null;
-              id?: string | null;
-              blockName?: string | null;
-              blockType: 'fileBlock';
-            }
-          | {
-              header: {
-                title: string;
-                subTitle?: string | null;
-                description?: string | null;
-              };
-              cards?:
-                | {
-                    card: {
-                      title: string;
-                      description?: string | null;
-                      collectionToShow?:
-                        | ({
+                              } | null);
+                          images?:
+                            | {
+                                title?: string | null;
+                                image: string | Media;
+                                caption?: string | null;
+                                id?: string | null;
+                              }[]
+                            | null;
+                          links?:
+                            | {
+                                link: {
+                                  type?: ('button' | 'link') | null;
+                                  title: string;
+                                  href: string;
+                                  collectionToShow?:
+                                    | (
+                                        | {
+                                            relationTo: 'categories';
+                                            value: string | Category;
+                                          }
+                                        | {
+                                            relationTo: 'products';
+                                            value: string | Product;
+                                          }
+                                        | {
+                                            relationTo: 'contacts';
+                                            value: string | Contact;
+                                          }
+                                      )[]
+                                    | null;
+                                };
+                                id?: string | null;
+                              }[]
+                            | null;
+                        };
+                        id?: string | null;
+                      }[]
+                    | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 'cardBlock';
+                }
+              | {
+                  header: {
+                    title: string;
+                    subTitle?: string | null;
+                    description?: string | null;
+                  };
+                  images?:
+                    | {
+                        title?: string | null;
+                        image: string | Media;
+                        caption?: string | null;
+                        id?: string | null;
+                      }[]
+                    | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 'imageBlock';
+                }
+              | {
+                  header: {
+                    title: string;
+                    subTitle?: string | null;
+                    description?: string | null;
+                  };
+                  links?:
+                    | {
+                        link: {
+                          type?: ('button' | 'link') | null;
+                          title: string;
+                          href: string;
+                          collectionToShow?:
+                            | (
+                                | {
+                                    relationTo: 'categories';
+                                    value: string | Category;
+                                  }
+                                | {
+                                    relationTo: 'products';
+                                    value: string | Product;
+                                  }
+                                | {
+                                    relationTo: 'contacts';
+                                    value: string | Contact;
+                                  }
+                              )[]
+                            | null;
+                        };
+                        id?: string | null;
+                      }[]
+                    | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 'linkBlock';
+                }
+              | {
+                  header: {
+                    title: string;
+                    subTitle?: string | null;
+                    description?: string | null;
+                  };
+                  collectionToShow?:
+                    | (
+                        | {
                             relationTo: 'categories';
                             value: string | Category;
-                          } | null)
-                        | ({
+                          }
+                        | {
                             relationTo: 'products';
                             value: string | Product;
-                          } | null)
-                        | ({
+                          }
+                        | {
                             relationTo: 'contacts';
                             value: string | Contact;
-                          } | null);
-                      images?:
-                        | {
-                            title?: string | null;
-                            image: string | Media;
-                            caption?: string | null;
-                            id?: string | null;
-                          }[]
-                        | null;
-                      links?:
-                        | {
-                            link: {
-                              type?: ('button' | 'link') | null;
-                              title: string;
-                              href: string;
-                              collectionToShow?:
-                                | (
-                                    | {
-                                        relationTo: 'categories';
-                                        value: string | Category;
-                                      }
-                                    | {
-                                        relationTo: 'products';
-                                        value: string | Product;
-                                      }
-                                    | {
-                                        relationTo: 'contacts';
-                                        value: string | Contact;
-                                      }
-                                  )[]
-                                | null;
-                            };
-                            id?: string | null;
-                          }[]
-                        | null;
-                    };
-                    id?: string | null;
-                  }[]
-                | null;
-              id?: string | null;
-              blockName?: string | null;
-              blockType: 'cardBlock';
-            }
-          | {
-              header: {
-                title: string;
-                subTitle?: string | null;
-                description?: string | null;
-              };
-              images?:
-                | {
-                    title?: string | null;
-                    image: string | Media;
-                    caption?: string | null;
-                    id?: string | null;
-                  }[]
-                | null;
-              id?: string | null;
-              blockName?: string | null;
-              blockType: 'imageBlock';
-            }
-          | {
-              header: {
-                title: string;
-                subTitle?: string | null;
-                description?: string | null;
-              };
-              links?:
-                | {
-                    link: {
-                      type?: ('button' | 'link') | null;
-                      title: string;
-                      href: string;
-                      collectionToShow?:
-                        | (
-                            | {
-                                relationTo: 'categories';
-                                value: string | Category;
-                              }
-                            | {
-                                relationTo: 'products';
-                                value: string | Product;
-                              }
-                            | {
-                                relationTo: 'contacts';
-                                value: string | Contact;
-                              }
-                          )[]
-                        | null;
-                    };
-                    id?: string | null;
-                  }[]
-                | null;
-              id?: string | null;
-              blockName?: string | null;
-              blockType: 'linkBlock';
-            }
-          | {
-              header: {
-                title: string;
-                subTitle?: string | null;
-                description?: string | null;
-              };
-              collectionToShow?:
-                | (
-                    | {
-                        relationTo: 'categories';
-                        value: string | Category;
-                      }
-                    | {
-                        relationTo: 'products';
-                        value: string | Product;
-                      }
-                    | {
-                        relationTo: 'contacts';
-                        value: string | Contact;
-                      }
-                  )[]
-                | null;
-              id?: string | null;
-              blockName?: string | null;
-              blockType: 'collectionBlock';
-            }
-        )[]
-      | null;
-    meta?: {
-      title?: string | null;
-      description?: string | null;
-      image?: string | Media | null;
-    };
-    updatedAt: string;
-    createdAt: string;
+                          }
+                      )[]
+                    | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 'collectionBlock';
+                }
+            )[]
+          | null;
+        meta?: {
+          title?: string | null;
+          description?: string | null;
+          image?: string | Media | null;
+        };
+        updatedAt: string;
+        createdAt: string;
+      }]    
   }
   /**
    * This interface was referenced by `Config`'s JSON-Schema

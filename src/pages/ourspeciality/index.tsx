@@ -44,15 +44,15 @@ export function OurSpeciality({title, subTitle, card1Title,card2Title, card1desc
                   />
                 </div>
                 <div>
-                  <a className="text-[#ED3237] mb-3 block font-semibold" href="">
+                  <a className="text-[#ED3237] mb-3 block font-semibold" href="/">
                     {card1titlerod1}
                   </a>
                   <hr />
-                  <a className="text-[#ED3237] mb-3 block font-semibold" href="">
+                  <a className="text-[#ED3237] mb-3 block font-semibold" href="/">
                     {card1titlerod2}
                   </a>
                   <hr />
-                  <a className="text-[#ED3237] mb-3 block font-semibold" href="">
+                  <a className="text-[#ED3237] mb-3 block font-semibold" href="/">
                     {card1titlerod3}
                   </a>
                 </div>
@@ -83,15 +83,15 @@ export function OurSpeciality({title, subTitle, card1Title,card2Title, card1desc
                   />
                 </div>
                 <div>
-                  <a className="text-[#3E4095]  block mb-3 font-semibold" href="">
+                  <a className="text-[#3E4095]  block mb-3 font-semibold" href="/">
                     {card2titlerod1}
                   </a>
                   <hr />
-                  <a className="text-[#3E4095] block mb-3 font-semibold" href="">
+                  <a className="text-[#3E4095] block mb-3 font-semibold" href="/">
                     {card2titlerod2}
                   </a>
                   <hr />
-                  <a className="text-[#3E4095] block mb-3 font-semibold" href="">
+                  <a className="text-[#3E4095] block mb-3 font-semibold" href="/">
                     {card2titlerod3}
                   </a>
                 </div>

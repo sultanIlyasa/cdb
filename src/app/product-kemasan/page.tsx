@@ -13,7 +13,7 @@ export default function ProductKemasanPage() {
 
   useEffect(() => {
     const fetchKemansanPage = async () => {
-      const endpoint = 'http://localhost:3000/api/pages/668bb16754e5beab663e25d0?locale=undefined&draft=false&depth=1';
+      const endpoint = 'http://localhost:4000/api/pages/slug/product-kemasan';
       const dataFetch = await fetchData<Page>(endpoint, setError);
       setData(dataFetch);
     };

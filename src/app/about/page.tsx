@@ -13,7 +13,7 @@ export default function About() {
 
   useEffect(() => {
     const fetchaAboutPage = async () => {
-      const endpoint = 'http://localhost:3000/api/pages/668bb16754e5beab663e25d0?locale=undefined&draft=false&depth=1';
+      const endpoint = 'about';
       const dataFetch = await fetchData<Page>(endpoint, setError);
       setData(dataFetch);
     };
