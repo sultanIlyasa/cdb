@@ -18,12 +18,12 @@ export function Banner({title, slogan, button1, button2, hrefbutton1, hrefbutton
 
         <div className="flex flex-row justify-center gap-5">
           
-          <Link href="/">
+          <Link href={hrefbutton1}>
             <button className="w-[258px] h-[66px] px-4 py-2 backdrop-blur-sm bg-[#3B71CA]  text-white text-center rounded-[20px] relative mt-4 hover:bg-[#F3F8FF] hover:text-[#0F6FFF]">
               <span>{button1}</span>
             </button>
           </Link>
-          <Link href="/">
+          <Link href={hrefbutton2}>
             <button className="w-[258px] h-[66px] px-4 py-2 backdrop-blur-sm bg-[#3B71CA]  text-white text-center rounded-[20px] relative mt-4 hover:bg-[#F3F8FF] hover:text-[#0F6FFF]">
               <span>{button2}</span>
             </button>
