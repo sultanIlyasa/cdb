@@ -9,15 +9,15 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-export function OurSpeciality({title, subTitle, card1Title,card2Title, card1desc, card2desc, card1titlerod1 , card1titlerod2 , card1titlerod3 , card2titlerod1 , card2titlerod2 , card2titlerod3,card1link1, card1link2, card1link3, card2link1, card2link2,card2link3}) {
+export function OurSpeciality() {
   return (
     <div>
       <div className="text-center my-[45px]">
         <h4 className="text-[#ED3237] text-[20px] font-semibold">
-          {title}
+          KEAHLIAN KAMI
         </h4>
         <h2 className="text-[#3E4095] text-[28px] font-bold">
-          {subTitle}
+          Jasa yang Kami Tawarkan
         </h2>
       </div>
       <div className="flex flex-row justify-center gap-5">
@@ -26,10 +26,13 @@ export function OurSpeciality({title, subTitle, card1Title,card2Title, card1desc
             <div className="pl-[58px] pt-[37px] pr-[70px]">
               <CardHeader>
                 <CardTitle className="text-[24px] text-[#A90F13] font-bold">
-                  {card1Title}
+                  Konstruksi
                 </CardTitle>
                 <CardDescription className="text-[#000000] text-[16px] font-medium text-justify">
-                  {card1desc}
+                  Membangun dengan keyakinan. Tim konstruksi kami adalah pilihan
+                  mitra dalam mewujudkan impian Anda. Dari konsep hingga
+                  penyelesaian, kami menjamin pelaksanaan yang lancar dan hasil
+                  unggul yang bertahan lama.
                 </CardDescription>
               </CardHeader>
             </div>
@@ -44,16 +47,16 @@ export function OurSpeciality({title, subTitle, card1Title,card2Title, card1desc
                   />
                 </div>
                 <div>
-                  <a className="text-[#ED3237] mb-3 block font-semibold" href="/">
-                    {card1titlerod1}
+                  <a className="text-[#ED3237] mb-3 block font-semibold" href="">
+                    Desain & Konstruksi Indoor
                   </a>
                   <hr />
-                  <a className="text-[#ED3237] mb-3 block font-semibold" href="/">
-                    {card1titlerod2}
+                  <a className="text-[#ED3237] mb-3 block font-semibold" href="">
+                    Instalasi
                   </a>
                   <hr />
-                  <a className="text-[#ED3237] mb-3 block font-semibold" href="/">
-                    {card1titlerod3}
+                  <a className="text-[#ED3237] mb-3 block font-semibold" href="">
+                    Tampilkan Lebih Banyak
                   </a>
                 </div>
               </CardContent>
@@ -65,10 +68,13 @@ export function OurSpeciality({title, subTitle, card1Title,card2Title, card1desc
             <div className="pl-[58px] pt-[37px] pr-[70px]">
               <CardHeader>
                 <CardTitle className="text-[24px] text-[#1F204C] font-bold">
-                  {card2Title}
+                  Percetakan
                 </CardTitle>
                 <CardDescription className="text-[#000000] text-[16px] font-medium text-justify">
-                  {card2desc}
+                  Layanan cetak kami memberikan warna yang cerah, cetakan hitam
+                  putih yang tajam, dan waktu pengerjaan yang cepat. Dari kartu
+                  bisnis hingga spanduk, kami memastikan harga kompetitif dan
+                  kesan yang melekat. impressions.
                 </CardDescription>
               </CardHeader>
             </div>
@@ -83,16 +89,16 @@ export function OurSpeciality({title, subTitle, card1Title,card2Title, card1desc
                   />
                 </div>
                 <div>
-                  <a className="text-[#3E4095]  block mb-3 font-semibold" href="/">
-                    {card2titlerod1}
+                  <a className="text-[#3E4095]  block mb-3 font-semibold" href="">
+                    Perlengkapan Kantor
                   </a>
                   <hr />
-                  <a className="text-[#3E4095] block mb-3 font-semibold" href="/">
-                    {card2titlerod2}
+                  <a className="text-[#3E4095] block mb-3 font-semibold" href="">
+                    Souvenir & Konveksi
                   </a>
                   <hr />
-                  <a className="text-[#3E4095] block mb-3 font-semibold" href="/">
-                    {card2titlerod3}
+                  <a className="text-[#3E4095] block mb-3 font-semibold" href="">
+                    Tampilkan Lebih Banyak
                   </a>
                 </div>
               </CardContent>
