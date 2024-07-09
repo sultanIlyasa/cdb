@@ -1,7 +1,4 @@
-"use client"
-import React, { useState, useEffect } from 'react';
-import { fetchData } from "../../lib/api/fetchData";
-import { Page } from '../../lib/interface/interface';
+import React from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import {
@@ -11,24 +8,7 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 
-
-
-
-const Products = () => {  
-  
-  const [data, setData] = useState<Page | null>(null);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    const fetchProductPage = async () => {
-      const endpoint = 'http://localhost:4000/api/pages/slug/products';
-      const homePageData = await fetchData<Page>(endpoint, setError);
-      setData(homePageData);
-    };
-
-    fetchProductPage();
-  }, []);
-
+const Products = () => {
   return (
     <div>
       <>

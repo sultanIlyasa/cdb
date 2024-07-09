@@ -1,8 +1,5 @@
-
-"use client"
-import React, { useState, useEffect } from 'react';
-import { fetchData } from "../../lib/api/fetchData";
-import { Page } from '../../lib/interface/interface';
+"use client";
+import React from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import { Icon } from "react-icons-kit";
@@ -44,18 +41,6 @@ const Contact = () => {
         // Add more styles for other images as needed
       };
     
-      const [data, setData] = useState<Page | null>(null);
-      const [error, setError] = useState<string | null>(null);
-    
-      useEffect(() => {
-        const fetchContactPage = async () => {
-          const endpoint = 'http://localhost:4000/api/pages/slug/contact';
-          const dataFetch = await fetchData<Page>(endpoint, setError);
-          setData(dataFetch);
-        };
-    
-        fetchContactPage();
-      }, []);
   return (
     <div>
       <>
