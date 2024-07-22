@@ -22,133 +22,133 @@ const Slideshow = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center min-h-screen ">
-      <div className=" w-[800px] h-[450px] px-20  mx-auto bg-gradient-to-br from-[#D1D1FA] via-[#7374C5] to-[#F7A1A4] rounded-lg">
+    <div className="overflow-hidden flex justify-center items-center min-h-screen overflow-hidden ">
+      <div className="w-[360px] h-[290px] md:w-[1042px] md:h-[614px] md:px-20  mx-auto bg-gradient-to-br from-[#D1D1FA] via-[#7374C5] to-[#F7A1A4] rounded-lg">
         <div>
           <h2 className="text-white font-bold text-xl mb-4 mt-4">
             Company Profile
           </h2>
         </div>
         <div>
-          <Carousel className="w-[660px] h-[345px] mx-auto ">
+          <Carousel className="md:w-[856px] md:h-[481px] mx-auto ">
             <CarouselContent>
               <CarouselItem>
-                <Card className="w-[660px] h-[345px] border-none">
+                <Card className="border-none md:w-[856px] md:h-[481px]">
                   <CardContent>
                     <img
                       src="./images/comprof1.jpg"
                       alt=""
-                      className="object-cover  w-[660px] h-[345px] rounded-[16px] border-none"
+                      className="md:mx-6 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
                     />
                   </CardContent>
                 </Card>
               </CarouselItem>
               <CarouselItem>
-                <Card className="w-[660px] h-[345px] border-none">
+                <Card className=" md:w-[856px] md:h-[481px] border-none">
                   <CardContent>
                     <img
                       src="/images/comprof2.jpg"
                       alt=""
-                      className="object-cover w-[660px] h-[345px] rounded-[16px] border-none"
+                      className="-mx-6 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
                     />
                   </CardContent>
                 </Card>
               </CarouselItem>
               <CarouselItem>
-                <Card className="w-[660px] h-[345px] border-none">
+                <Card className="md:w-[856px] md:h-[481px] border-none">
                   <CardContent>
                     <img
                       src="/images/comprof3.jpg"
                       alt=""
-                      className="object-cover object-top  w-[660px] h-[345px] rounded-[16px] border-none"
+                      className="-mx-6 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
                     />
                   </CardContent>
                 </Card>
               </CarouselItem>
               <CarouselItem>
-                <Card className="w-[660px] h-[345px] border-none">
+                <Card className="md:w-[856px] md:h-[481px] border-none">
                   <CardContent>
                     <img
                       src="/images/comprof4.jpg"
                       alt=""
-                      className="object-cover w-[660px] h-[345px] rounded-[16px] border-none"
+                      className="mx-6 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
                     />
                   </CardContent>
                 </Card>
               </CarouselItem>
               <CarouselItem>
-                <Card className="w-[660px] h-[345px] border-none">
+                <Card className="md:w-[856px] md:h-[481px] border-none">
                   <CardContent>
                     <img
                       src="/images/comprof5.jpg"
                       alt=""
-                      className="object-cover w-[660px] h-[345px] rounded-[16px] border-none"
+                      className="-mx-6 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
                     />
                   </CardContent>
                 </Card>
               </CarouselItem>
               <CarouselItem>
-                <Card className="w-[660px] h-[345px] border-none">
+                <Card className="md:w-[856px] md:h-[481px] object-cover  border-none">
                   <CardContent>
                     <img
                       src="/images/comprof5.jpg"
                       alt=""
-                      className="object-cover w-[660px] h-[345px] rounded-[16px] border-none"
+                      className="-mx-6 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
                     />
                   </CardContent>
                 </Card>
               </CarouselItem>
               <CarouselItem>
-                <Card className="w-[660px] h-[345px] border-none">
+                <Card className="md:w-[856px] md:h-[481px] border-none">
                   <CardContent>
                     <img
                       src="/images/comprof6.jpg"
                       alt=""
-                      className="object-cover w-[660px] h-[345px] rounded-[16px] border-none"
+                      className="-mx-6 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
                     />
                   </CardContent>
                 </Card>
               </CarouselItem>
               <CarouselItem>
-                <Card className="w-[660px] h-[345px] border-none">
+                <Card className="md:w-[856px] md:h-[481px] border-none">
                   <CardContent>
                     <img
                       src="/images/comprof7.jpg"
                       alt=""
-                      className="object-cover w-[660px] h-[345px] rounded-[16px] border-none"
+                      className="-mx-6 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
                     />
                   </CardContent>
                 </Card>
               </CarouselItem>
               <CarouselItem>
-                <Card className="w-[660px] h-[345px] border-none">
+                <Card className="md:w-[856px] md:h-[481px] border-none">
                   <CardContent>
                     <img
                       src="/images/comprof8.jpg"
                       alt=""
-                      className="object-cover w-[660px] h-[345px] rounded-[16px] border-none"
+                      className="-mx-6 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
                     />
                   </CardContent>
                 </Card>
               </CarouselItem>
               <CarouselItem>
-                <Card className="w-[660px] h-[345px] border-none">
+                <Card className="md:w-[856px] md:h-[481px] border-none">
                   <CardContent>
                     <img
                       src="/images/comprof9.jpg"
                       alt=""
-                      className="object-cover w-[660px] h-[345px] rounded-[16px] border-none"
+                      className="-mx-4 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
                     />
                   </CardContent>
                 </Card>
               </CarouselItem>
               <CarouselItem>
-                <Card className="w-[660px] h-[345px] border-none">
+                <Card className="md:w-[856px] md:h-[481px] border-none">
                   <CardContent>
                     <img
                       src="/images/comprof10.jpg"
                       alt=""
-                      className="object-cover w-[660px] h-[345px] rounded-[16px] border-none"
+                      className="mx-6 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
                     />
                   </CardContent>
                 </Card>

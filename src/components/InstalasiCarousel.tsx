@@ -19,7 +19,7 @@ export function InstalasiCarousel() {
           </h4>
           <h2 className="text-[#3E4095] text-lg lg:text-3xl font-bold">
             Instalasi
-          </h2> 
+          </h2>
         </div>
         <Carousel className="w-[324px] h-[252px] sm:w-[660px] sm:h-[345px] mx-auto ">
           <CarouselContent>
@@ -40,7 +40,7 @@ export function InstalasiCarousel() {
                   <img
                     src="./Instalasi2.png"
                     alt=""
-                    className="object-cover w-[324px] h-[252px] sm:w-[660px] sm:h-[345px] rounded-2xl border-none"
+                    className="object-cover  w-[324px] h-[252px] sm:w-[660px] sm:h-[345px] rounded-2xl border-none"
                   />
                 </CardContent>
               </Card>

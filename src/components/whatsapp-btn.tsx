@@ -23,9 +23,9 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
     <Link href={whatsappUrl} target="_blank">
       <button
         type="button"
-        className={`rounded-lg bg-green-600 px-8 py-4 text-white duration-150 hover:bg-red-700 fixed bottom-4 right-4 z-50`}
+        className={`rounded-2xl bg-green-600 px-4 py-4 text-white duration-150 hover:bg-red-700 fixed bottom-4 right-4 z-50`}
       >
-         <Icon icon={whatsapp} size={32} /> Kirim Pesan!
+         <Icon icon={whatsapp} size={32} />
       </button>
     </Link>
   );

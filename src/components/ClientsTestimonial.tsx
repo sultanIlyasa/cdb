@@ -30,12 +30,12 @@ export function ClientsTestimonial() {
                 />
               </div>
               <div className="grid grid-cols-1 gap-5 mb-[87px]">
-                <Card className="w-[621px] h-[231px] rounded-[12px] bg-[#FFFFFF] border-[0.5px] border-[#7374C5]">
-                  <CardHeader className="px-[35px] py-[30px]">
-                    <CardTitle className="text-[20px] text-[#212131] font-bold">
+                <Card className="w-[350px] sm:w-[694px] lg:w-[621px] rounded-xl bg-[#FFFFFF] border-[0.5px] border-[#7374C5] p-5">
+                  <CardContent className="w-[310px] sm:w-[654px] lg:w-[551px] mx-auto">
+                    <CardTitle className="text-base sm:text-xl text-[#212131] font-bold mb-2">
                       Exemplary Collaboration!
                     </CardTitle>
-                    <CardDescription className="text-[#424255] text-[14px] text-justify">
+                    <CardDescription className="text-[#424255] text-sm leading-6 text-justify mb-2">
                       The level of professionalism and dedication displayed by
                       this construction company's team is truly remarkable. Not
                       only did they deliver stunning end results, but they also
@@ -50,14 +50,14 @@ export function ClientsTestimonial() {
                         Bekasi Toll Project (2021)
                       </span>
                     </div>
-                  </CardHeader>
+                  </CardContent>
                 </Card>
                 <Card className="w-[621px] h-[183px] rounded-[12px] bg-[#FFFFFF] border-[0.5px] border-[#7374C5]">
-                  <CardHeader className="px-[35px] py-[15px]">
-                    <CardTitle className="text-[20px] text-[#212131] font-bold">
+                  <CardContent className="w-[310px] sm:w-[654px] lg:w-[551px] mx-auto">
+                    <CardTitle className="text-base sm:text-xl text-[#212131] font-bold mb-2">
                       Elevating Construction Standards
                     </CardTitle>
-                    <CardDescription className="text-[#424255] text-[14px] text-justify">
+                    <CardDescription className="text-[#424255] text-sm leading-6 text-justify mb-2">
                       Working with this company raised the bar for construction
                       excellence. Their meticulous attention to detail and
                       unwavering commitment ensured flawless execution from
@@ -70,7 +70,7 @@ export function ClientsTestimonial() {
                         Bandung Residential Complex (2023)
                       </span>
                     </div>
-                  </CardHeader>
+                  </CardContent>
                 </Card>
               </div>
             </div>
@@ -88,11 +88,11 @@ export function ClientsTestimonial() {
               </div>
               <div className="grid grid-cols-1 gap-5 mb-[87px]">
                 <Card className="w-[621px] h-[231px] rounded-[12px] bg-[#FFFFFF] border-[0.5px] border-[#7374C5]">
-                  <CardHeader className="px-[35px] py-[30px]">
-                    <CardTitle className="text-[20px] text-[#212131] font-bold">
+                  <CardContent className="w-[310px] sm:w-[654px] lg:w-[551px] mx-auto">
+                    <CardTitle className="text-base sm:text-xl text-[#212131] font-bold mb-2">
                       Exemplary Collaboration!
                     </CardTitle>
-                    <CardDescription className="text-[#424255] text-[14px] text-justify">
+                    <CardDescription className="text-[#424255] text-sm leading-6 text-justify mb-2">
                       The level of professionalism and dedication displayed by
                       this construction company's team is truly remarkable. Not
                       only did they deliver stunning end results, but they also
@@ -107,14 +107,14 @@ export function ClientsTestimonial() {
                         Bekasi Toll Project (2021)
                       </span>
                     </div>
-                  </CardHeader>
+                  </CardContent>
                 </Card>
                 <Card className="w-[621px] h-[183px] rounded-[12px] bg-[#FFFFFF] border-[0.5px] border-[#7374C5]">
-                  <CardHeader className="px-[35px] py-[15px]">
-                    <CardTitle className="text-[20px] text-[#212131] font-bold">
+                  <CardContent className="w-[310px] sm:w-[654px] lg:w-[551px] mx-auto">
+                    <CardTitle className="text-base sm:text-xl text-[#212131] font-bold mb-2">
                       Elevating Construction Standards
                     </CardTitle>
-                    <CardDescription className="text-[#424255] text-[14px] text-justify">
+                    <CardDescription className="text-[#424255] text-sm leading-6 text-justify mb-2">
                       Working with this company raised the bar for construction
                       excellence. Their meticulous attention to detail and
                       unwavering commitment ensured flawless execution from
@@ -127,7 +127,7 @@ export function ClientsTestimonial() {
                         Bandung Residential Complex (2023)
                       </span>
                     </div>
-                  </CardHeader>
+                  </CardContent>
                 </Card>
               </div>
             </div>
@@ -145,11 +145,11 @@ export function ClientsTestimonial() {
               </div>
               <div className="grid grid-cols-1 gap-5 mb-[87px]">
                 <Card className="w-[621px] h-[231px] rounded-[12px] bg-[#FFFFFF] border-[0.5px] border-[#7374C5]">
-                  <CardHeader className="px-[35px] py-[30px]">
-                    <CardTitle className="text-[20px] text-[#212131] font-bold">
+                  <CardContent className="w-[310px] sm:w-[654px] lg:w-[551px] mx-auto">
+                    <CardTitle className="text-base sm:text-xl text-[#212131] font-bold mb-2">
                       Exemplary Collaboration!
                     </CardTitle>
-                    <CardDescription className="text-[#424255] text-[14px] text-justify">
+                    <CardDescription className="text-[#424255] text-sm leading-6 text-justify mb-2">
                       The level of professionalism and dedication displayed by
                       this construction company's team is truly remarkable. Not
                       only did they deliver stunning end results, but they also
@@ -164,14 +164,14 @@ export function ClientsTestimonial() {
                         Bekasi Toll Project (2021)
                       </span>
                     </div>
-                  </CardHeader>
+                  </CardContent>
                 </Card>
                 <Card className="w-[621px] h-[183px] rounded-[12px] bg-[#FFFFFF] border-[0.5px] border-[#7374C5]">
-                  <CardHeader className="px-[35px] py-[15px]">
-                    <CardTitle className="text-[20px] text-[#212131] font-bold">
+                  <CardContent className="w-[310px] sm:w-[654px] lg:w-[551px] mx-auto">
+                    <CardTitle className="text-base sm:text-xl text-[#212131] font-bold mb-2">
                       Elevating Construction Standards
                     </CardTitle>
-                    <CardDescription className="text-[#424255] text-[14px] text-justify">
+                    <CardDescription className="text-[#424255] text-sm leading-6 text-justify mb-2">
                       Working with this company raised the bar for construction
                       excellence. Their meticulous attention to detail and
                       unwavering commitment ensured flawless execution from
@@ -184,7 +184,7 @@ export function ClientsTestimonial() {
                         Bandung Residential Complex (2023)
                       </span>
                     </div>
-                  </CardHeader>
+                  </CardContent>
                 </Card>
               </div>
             </div>
@@ -202,11 +202,11 @@ export function ClientsTestimonial() {
               </div>
               <div className="grid grid-cols-1 gap-5 mb-[87px]">
                 <Card className="w-[621px] h-[231px] rounded-[12px] bg-[#FFFFFF] border-[0.5px] border-[#7374C5]">
-                  <CardHeader className="px-[35px] py-[30px]">
-                    <CardTitle className="text-[20px] text-[#212131] font-bold">
+                  <CardContent className="w-[310px] sm:w-[654px] lg:w-[551px] mx-auto">
+                    <CardTitle className="text-base sm:text-xl text-[#212131] font-bold mb-2">
                       Exemplary Collaboration!
                     </CardTitle>
-                    <CardDescription className="text-[#424255] text-[14px] text-justify">
+                    <CardDescription className="text-[#424255] text-sm leading-6 text-justify mb-2">
                       The level of professionalism and dedication displayed by
                       this construction company's team is truly remarkable. Not
                       only did they deliver stunning end results, but they also
@@ -221,11 +221,11 @@ export function ClientsTestimonial() {
                         Bekasi Toll Project (2021)
                       </span>
                     </div>
-                  </CardHeader>
+                  </CardContent>
                 </Card>
                 <Card className="w-[621px] h-[183px] rounded-[12px] bg-[#FFFFFF] border-[0.5px] border-[#7374C5]">
-                  <CardHeader className="px-[35px] py-[15px]">
-                    <CardTitle className="text-[20px] text-[#212131] font-bold">
+                  <CardContent className="w-[310px] sm:w-[654px] lg:w-[551px] mx-auto">
+                    <CardTitle className="text-base sm:text-xl text-[#212131] font-bold mb-2">
                       Elevating Construction Standards
                     </CardTitle>
                     <CardDescription className="text-[#424255] text-[14px] text-justify ">
@@ -241,7 +241,7 @@ export function ClientsTestimonial() {
                         Bandung Residential Complex (2023)
                       </span>
                     </div>
-                  </CardHeader>
+                  </CardContent>
                 </Card>
               </div>
             </div>

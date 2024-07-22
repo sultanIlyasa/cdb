@@ -52,10 +52,10 @@ export default function Navbar() {
                 <Image src="/cdb.png" width={67} height={45} alt={"logo"} />
             </div>
             <div className="">
-              <h2 className="text-[#000000] text-[16px] text-left">
+              <h2 className="text-[#000000] text-[16px] text-left mb-1 mt-1">
                 PT. Cahaya Dua Berlian
               </h2>
-              <p className="text-[#666666] text-[12px] text-left">
+              <p className="text-[#666666] text-[12px] text-left font-light">
                 Konstruksi & Percetakan
               </p>
             </div>

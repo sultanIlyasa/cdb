@@ -20,11 +20,10 @@ const stats = () => {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="font-montserrat text-4xl font-bold leading-10 text-left">
-              Setiap proyek memenuhi <br />
-              <span className="text-[#7374C5]">Standar kualitas</span> dan
-              <br />
-              <span className="text-[#7374C5]">keahlian tinggi.</span>
+            <div className="font-montserrat text-lg md:text-4xl font-bold leading-10 text-left">
+              Setiap proyek memenuhi
+              <span className="text-[#7374C5]"> Standar kualitas</span> dan
+              <span className="text-[#7374C5]"> keahlian tinggi.</span>
             </div>
           </CardContent>
         </Card>
@@ -32,7 +31,7 @@ const stats = () => {
         <Card className="border-none bg-[#FAF7F7] mx-auto">
           <CardContent className="text-justify">
             <div
-              className="font-cabin text-base font-normal leading-[32px] text-justify py-9"
+              className="font-cabin text-xs md:text-base font-normal leading-[32px] text-justify py-9"
               style={{ color: "#666666" }}
             >
               Kami memprioritaskan ketepatan, efisiensi, dan keandalan. Dengan
@@ -45,40 +44,40 @@ const stats = () => {
           </CardContent>
         </Card>
       </div>
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-4 grid-cols-4">
         <Card className="border-none shadow-none bg-[#FAF7F7]">
-          <CardContent className="mx-11">
-            <div className="mx-11 text-6xl content-center font-semibold text-[#7374C5] ">
-              15+{" "}
-            </div>
-            <p>Tahun Berpengalaman</p>
+          <CardContent className="flex flex-col items-center">
+            <h1 className="font-semibold md:text-4xl text-[#7374C5]">15+</h1>
+            <p className="text-xs md:text-xl font-bold text-center">
+              Tahun Berpengalaman
+            </p>
           </CardContent>
         </Card>
 
         <Card className="border-none shadow-none bg-[#FAF7F7]">
-          <CardContent className="px-[100px]">
-            <div className=" text-6xl content-center font-semibold text-[#7374C5] ">
-              442+
-            </div>
-            <p className="px-2">Proyek Selesai</p>
+          <CardContent className="flex flex-col items-center">
+            <h1 className="font-semibold md:text-4xl text-[#7374C5]">442+</h1>
+            <p className="text-xs md:text-xl font-bold text-center">
+              Proyek Selesai
+            </p>
           </CardContent>
         </Card>
 
         <Card className="border-none shadow-none bg-[#FAF7F7]">
-          <CardContent className="px-[110px]">
-            <div className="text-6xl content-center font-semibold text-[#7374C5] ">
-              50+
-            </div>
-            <p>Produk Kami</p>
+          <CardContent className="flex flex-col items-center">
+            <h1 className="font-semibold md:text-4xl text-[#7374C5]">50+</h1>
+            <p className="text-xs md:text-xl font-bold text-center">
+              Produk Kami
+            </p>
           </CardContent>
         </Card>
 
         <Card className="border-none shadow-none bg-[#FAF7F7]">
-          <CardContent className=" px-[70px]">
-            <div className="mx-10 text-6xl content-center font-semibold text-[#7374C5] ">
-              98%
-            </div>
-            <p>Tingkat Kepuasan</p>
+          <CardContent className="flex flex-col items-center">
+            <h1 className="font-semibold md:text-4xl text-[#7374C5]">98%</h1>
+            <p className="text-xs md:text-xl font-bold text-center">
+              Tingkat Kepuasan
+            </p>
           </CardContent>
         </Card>
       </div>
