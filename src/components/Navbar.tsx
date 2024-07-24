@@ -31,22 +31,22 @@ export default function Navbar() {
             <p>Konstruksi & Percetakan</p>
           </div>
         </Link>
-        <div className="md:flex w-full justify-end items-center gap-2  hidden text-sm sm:text-base md:text-lg lg:text-xl">
+        <div className="md:flex w-full justify-end items-center gap-4 hidden text-sm sm:text-base md:text-lg lg:text-xl">
           <Link
             href={"/produk-kami"}
-            className="hover:underline-offset-8 hover:underline"
+            className="hover:underline-offset-8 hover:underline text-sm sm:text-base md:text-lg lg:text-xl"
           >
             Produk kami
           </Link>
           <Link
             href={"/produk-kami"}
-            className="hover:underline-offset-8 hover:underline"
+            className="hover:underline-offset-8 hover:underline text-sm sm:text-base md:text-lg lg:text-xl"
           >
             Tentang kami
           </Link>
           <Link
             href={"/produk-kami"}
-            className="hover:underline-offset-8 hover:underline"
+            className="hover:underline-offset-8 hover:underline text-sm sm:text-base md:text-lg lg:text-xl"
           >
             Kontak kami
           </Link>
