@@ -33,19 +33,19 @@ export default function Navbar() {
         </Link>
         <div className="md:flex w-full justify-end items-center gap-4 hidden text-sm sm:text-base md:text-lg lg:text-xl">
           <Link
-            href={"/produk-kami"}
+            href={"/produk"}
             className="hover:underline-offset-8 hover:underline text-sm sm:text-base md:text-lg lg:text-xl"
           >
             Produk kami
           </Link>
           <Link
-            href={"/produk-kami"}
+            href={"/tentang"}
             className="hover:underline-offset-8 hover:underline text-sm sm:text-base md:text-lg lg:text-xl"
           >
             Tentang kami
           </Link>
           <Link
-            href={"/produk-kami"}
+            href={"/kontak"}
             className="hover:underline-offset-8 hover:underline text-sm sm:text-base md:text-lg lg:text-xl"
           >
             Kontak kami
