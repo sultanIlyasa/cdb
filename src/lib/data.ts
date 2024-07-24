@@ -1,4 +1,4 @@
-import { Kategori, Link } from "@/types";
+import { Kategori, Link, Mitra } from "@/types";
 
 export const Produks: Kategori[] = [
   {
@@ -139,4 +139,21 @@ export const Links: Link[] = [
     label: "Kontak Kami",
     url: "/kontak",
   },
+];
+
+export const Mitras: Mitra[] = [
+  { url: "/images/client-1.png", label: null },
+  { url: "/images/client-2.png", label: null },
+  { url: "/images/client-3.png", label: null },
+  { url: "/images/client-4.png", label: null },
+  { url: "/images/client-5.png", label: null },
+  { url: "/images/client-6.png", label: null },
+  { url: "/images/client-7.png", label: null },
+  { url: "/images/client-8.png", label: null },
+  { url: "/images/client-9.png", label: null },
+  { url: "/images/client-10.png", label: null },
+  { url: "/images/client-11.png", label: null },
+  { url: "/images/client-12.png", label: null },
+  { url: "/images/client-13.png", label: null },
+  { url: "/images/client-14.png", label: null },
 ];

@@ -25,3 +25,8 @@ export type Link = {
   url: string;
   label: string;
 };
+
+export type Mitra = {
+  url: string;
+  label: string | null;
+};
