@@ -7,11 +7,14 @@ const Footer = () => {
     <footer className="w-full bg-[#1F204C] text-white shadow-lg">
       <div className="flex w-[90%] flex-col mx-auto py-10 gap-4">
         <div className="flex w-full gap-4">
-          <Link href={"/"} className="flex w-full gap-4">
+          <Link
+            href={"/"}
+            className="flex w-full gap-2 items-center justify-start"
+          >
             <Image
               src="/cdb.png"
               alt={"logo"}
-              width={67}
+              width={65}
               height={45}
               className="w-14"
             />

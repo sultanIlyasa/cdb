@@ -31,7 +31,7 @@ export default function Navbar() {
             <p>Konstruksi & Percetakan</p>
           </div>
         </Link>
-        <div className="md:flex w-full justify-end items-center gap-2  hidden">
+        <div className="md:flex w-full justify-end items-center gap-4  hidden">
           <Link
             href={"/produk-kami"}
             className="hover:underline-offset-8 hover:underline"

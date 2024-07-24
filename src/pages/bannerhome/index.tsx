@@ -1,8 +1,13 @@
 import React from "react";
-import { Banner } from "@/components/Banner";
+import { Banner } from "@/components/home/Banner";
 
 const bannerHome = () => {
-  const images = ["/banner1.png", "/banner2.png", "/banner3.jpg", "/banner4.jpg"];
+  const images = [
+    "/banner1.png",
+    "/banner2.png",
+    "/banner3.jpg",
+    "/banner4.jpg",
+  ];
   return (
     <Banner className="h-[40rem]" images={images} duration={5000}>
       <div className="z-50 flex flex-col justify-center md:flex">
@@ -12,10 +17,12 @@ const bannerHome = () => {
         <p className="text-[#F5F5F5] w-[1070px] h-[122px] text-center text-[15px] px-[100px]">
           Dari membangun pondasi yang kokoh hingga menciptakan cetakan
           berkualitas tinggi, kami adalah{" "}
-          <span style={{color:"#FFDE6E"}}>solusi terbaik</span> untuk semua
+          <span style={{ color: "#FFDE6E" }}>solusi terbaik</span> untuk semua
           kebutuhan
-          <span style={{color:"#FFDE6E"}}> konstruksi</span> dan <span style={{color:"#FFDE6E"}}>percetakan.</span> Percayakan kepada
-          kami untuk mewujudkan impian Anda, setiap langkah dalam prosesnya.
+          <span style={{ color: "#FFDE6E" }}> konstruksi</span> dan{" "}
+          <span style={{ color: "#FFDE6E" }}>percetakan.</span> Percayakan
+          kepada kami untuk mewujudkan impian Anda, setiap langkah dalam
+          prosesnya.
         </p>
 
         <div className="flex flex-row justify-center gap-5">
