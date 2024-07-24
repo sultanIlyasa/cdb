@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Links } from "@/lib/data";
 
 const Footer = () => {
   return (
@@ -40,21 +41,13 @@ const Footer = () => {
                   <span>Home</span>
                 </Link>
               </li>
-              <li className="hover:underline">
-                <Link href="/product">
-                  <span>Our Product</span>
-                </Link>
-              </li>
-              <li className="hover:underline">
-                <Link href="/about">
-                  <span>About Us</span>
-                </Link>
-              </li>
-              <li className="hover:underline">
-                <Link href="/contact">
-                  <span>Contact Us</span>
-                </Link>
-              </li>
+              {Links.map((link, i) => (
+                <li className="hover:underline" key={i}>
+                  <Link href={link.url}>
+                    <span>{link.label}</span>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import { Links } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
 import * as React from "react";
@@ -32,24 +33,15 @@ export default function Navbar() {
           </div>
         </Link>
         <div className="md:flex w-full justify-end items-center gap-4 hidden text-sm sm:text-base md:text-lg lg:text-xl">
-          <Link
-            href={"/produk"}
-            className="hover:underline-offset-8 hover:underline text-sm sm:text-base md:text-lg lg:text-xl"
-          >
-            Produk kami
-          </Link>
-          <Link
-            href={"/tentang"}
-            className="hover:underline-offset-8 hover:underline text-sm sm:text-base md:text-lg lg:text-xl"
-          >
-            Tentang kami
-          </Link>
-          <Link
-            href={"/kontak"}
-            className="hover:underline-offset-8 hover:underline text-sm sm:text-base md:text-lg lg:text-xl"
-          >
-            Kontak kami
-          </Link>
+          {Links.map((link, i) => (
+            <Link
+              key={i}
+              href={link.url}
+              className="hover:underline-offset-8 hover:underline text-sm sm:text-base md:text-lg lg:text-xl"
+            >
+              {link.label}
+            </Link>
+          ))}
         </div>
         <div className=" md:hidden block">
           <button
@@ -78,15 +70,11 @@ export default function Navbar() {
               isPressed ? "flex" : "hidden"
             } top-20 right-0 flex-col w-full p-10 gap-4 background-white bg-[#1F204C]`}
           >
-            <Link href={"/produk-kami"} className="btn  w-full">
-              Produk kami
-            </Link>
-            <Link href={"/produk-kami"} className="btn  w-full">
-              Tentang kami
-            </Link>
-            <Link href={"/produk-kami"} className="btn  w-full">
-              Kontak kami
-            </Link>
+            {Links.map((link, i) => (
+              <Link href={link.url} className="btn  w-full" key={i}>
+                {link.label}
+              </Link>
+            ))}
           </div>
         </div>
       </div>
