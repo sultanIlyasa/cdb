@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const colors = require("tailwindcss/colors");
 const {
@@ -45,7 +45,7 @@ const config = {
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
       boxShadow: {
-        "product": "0px 4px 4px 0px #00000040",
+        product: "0px 4px 4px 0px #00000040",
       },
     },
   },
@@ -65,10 +65,10 @@ function addVariablesForColors({ addBase, theme }: any) {
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });
 }
 
-export default config
+export default config;

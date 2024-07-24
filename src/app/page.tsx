@@ -6,13 +6,13 @@ import { Banner } from "@/components/Banner";
 import Slideshow from "@/components/slideshow";
 export default function Home() {
   return (
-    <main className="">
-      <Banner />
+    <main className="min-h-screen">
+      {/* <Banner />
       <OurSpeciality />
       <Stats />
       <Wcu />
       <Slideshow />
-      <Faq />
+      <Faq /> */}
     </main>
   );
 }

@@ -37,12 +37,12 @@ export function ClientsTestimonial() {
                     </CardTitle>
                     <CardDescription className="text-[#424255] text-sm leading-6 text-justify mb-2">
                       The level of professionalism and dedication displayed by
-                      this construction company's team is truly remarkable. Not
-                      only did they deliver stunning end results, but they also
-                      provided a seamless and collaborative working experience
-                      from start to finish of the project. Collaborating with
-                      this construction company was the right decision for every
-                      one of our projects.
+                      this construction company&apos;s team is truly remarkable.
+                      Not only did they deliver stunning end results, but they
+                      also provided a seamless and collaborative working
+                      experience from start to finish of the project.
+                      Collaborating with this construction company was the right
+                      decision for every one of our projects.
                     </CardDescription>
                     <div className="text-[16px] text-[#212131] font-medium">
                       Emily Johnson,{" "}
@@ -94,12 +94,12 @@ export function ClientsTestimonial() {
                     </CardTitle>
                     <CardDescription className="text-[#424255] text-sm leading-6 text-justify mb-2">
                       The level of professionalism and dedication displayed by
-                      this construction company's team is truly remarkable. Not
-                      only did they deliver stunning end results, but they also
-                      provided a seamless and collaborative working experience
-                      from start to finish of the project. Collaborating with
-                      this construction company was the right decision for every
-                      one of our projects.
+                      this construction company&apos;s team is truly remarkable.
+                      Not only did they deliver stunning end results, but they
+                      also provided a seamless and collaborative working
+                      experience from start to finish of the project.
+                      Collaborating with this construction company was the right
+                      decision for every one of our projects.
                     </CardDescription>
                     <div className="text-[16px] text-[#212131] font-medium">
                       Emily Johnson,{" "}
@@ -151,12 +151,12 @@ export function ClientsTestimonial() {
                     </CardTitle>
                     <CardDescription className="text-[#424255] text-sm leading-6 text-justify mb-2">
                       The level of professionalism and dedication displayed by
-                      this construction company's team is truly remarkable. Not
-                      only did they deliver stunning end results, but they also
-                      provided a seamless and collaborative working experience
-                      from start to finish of the project. Collaborating with
-                      this construction company was the right decision for every
-                      one of our projects.
+                      this construction company&apos;s team is truly remarkable.
+                      Not only did they deliver stunning end results, but they
+                      also provided a seamless and collaborative working
+                      experience from start to finish of the project.
+                      Collaborating with this construction company was the right
+                      decision for every one of our projects.
                     </CardDescription>
                     <div className="text-[16px] text-[#212131] font-medium">
                       Emily Johnson,{" "}
@@ -208,12 +208,12 @@ export function ClientsTestimonial() {
                     </CardTitle>
                     <CardDescription className="text-[#424255] text-sm leading-6 text-justify mb-2">
                       The level of professionalism and dedication displayed by
-                      this construction company's team is truly remarkable. Not
-                      only did they deliver stunning end results, but they also
-                      provided a seamless and collaborative working experience
-                      from start to finish of the project. Collaborating with
-                      this construction company was the right decision for every
-                      one of our projects.
+                      this construction company&apos;s team is truly remarkable.
+                      Not only did they deliver stunning end results, but they
+                      also provided a seamless and collaborative working
+                      experience from start to finish of the project.
+                      Collaborating with this construction company was the right
+                      decision for every one of our projects.
                     </CardDescription>
                     <div className="text-[16px] text-[#212131] font-medium">
                       Emily Johnson,{" "}
