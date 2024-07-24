@@ -94,7 +94,7 @@ export const InfiniteMovingCards = ({
               alt="Card Image"
               width={250}
               height={150}
-              className="h-[120px] lg:h-[240px] bg-white gap-2"
+              className="h-[120px] lg:h-[240px] w-auto bg-white gap-2"
             />
           </li>
         ))}

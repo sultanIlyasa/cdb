@@ -30,3 +30,12 @@ export type Mitra = {
   url: string;
   label: string | null;
 };
+
+export type pelanggan = {
+  nama: string;
+  foto: string;
+  perusahaan: string;
+  tahun: string;
+  judul: string;
+  deskripsi: string;
+};
