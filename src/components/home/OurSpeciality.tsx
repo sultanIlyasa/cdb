@@ -15,10 +15,10 @@ export function OurSpeciality() {
   return (
     <div className="min-h-screen w-[80%] mx-auto flex flex-col justify-center items-center">
       <div className="text-center py-20 flex flex-col gap-4">
-        <h4 className="text-[#ED3237] text-sm md:text-[20px] font-semibold">
+        <h4 className="text-[#ED3237] text-sm sm:text-base md:text-lg lg:text-2xl  font-semibold">
           KEAHLIAN KAMI
         </h4>
-        <h2 className="text-[#3E4095] text-lg md:text-[28px] font-bold">
+        <h2 className="text-[#3E4095] text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">
           Jasa yang Kami Tawarkan
         </h2>
       </div>

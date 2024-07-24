@@ -1,5 +1,5 @@
 import { OurSpeciality } from "@/components/home/OurSpeciality";
-import Stats from "@/pages/stats";
+import Stats from "@/components/home/Stats";
 import Faq from "@/pages/faq";
 import Wcu from "@/pages/wcu";
 import { Banner } from "@/components/home/Banner";
@@ -9,8 +9,8 @@ export default function Home() {
     <main className="min-h-screen">
       <Banner />
       <OurSpeciality />
-      {/* <Stats />
-      <Wcu />
+      <Stats />
+      {/* <Wcu />
       <Slideshow />
       <Faq /> */}
     </main>
