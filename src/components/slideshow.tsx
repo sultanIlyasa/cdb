@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Image from "next/image";
 const Slideshow = () => {
   const images = [
     "/images/comprof1.jpg",
@@ -22,141 +23,35 @@ const Slideshow = () => {
   ];
 
   return (
-    <div className="overflow-hidden flex justify-center items-center min-h-screen overflow-hidden ">
-      <div className="w-[360px] h-[290px] md:w-[1042px] md:h-[614px] md:px-20  mx-auto bg-gradient-to-br from-[#D1D1FA] via-[#7374C5] to-[#F7A1A4] rounded-lg">
-        <div>
-          <h2 className="text-white font-bold text-xl mb-4 mt-4">
-            Company Profile
-          </h2>
-        </div>
-        <div>
-          <Carousel className="md:w-[856px] md:h-[481px] mx-auto ">
-            <CarouselContent>
-              <CarouselItem>
-                <Card className="border-none md:w-[856px] md:h-[481px]">
-                  <CardContent>
-                    <img
-                      src="./images/comprof1.jpg"
-                      alt=""
-                      className="md:mx-6 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-              <CarouselItem>
-                <Card className=" md:w-[856px] md:h-[481px] border-none">
-                  <CardContent>
-                    <img
-                      src="/images/comprof2.jpg"
-                      alt=""
-                      className="-mx-6 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-              <CarouselItem>
-                <Card className="md:w-[856px] md:h-[481px] border-none">
-                  <CardContent>
-                    <img
-                      src="/images/comprof3.jpg"
-                      alt=""
-                      className="-mx-6 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-              <CarouselItem>
-                <Card className="md:w-[856px] md:h-[481px] border-none">
-                  <CardContent>
-                    <img
-                      src="/images/comprof4.jpg"
-                      alt=""
-                      className="mx-6 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-              <CarouselItem>
-                <Card className="md:w-[856px] md:h-[481px] border-none">
-                  <CardContent>
-                    <img
-                      src="/images/comprof5.jpg"
-                      alt=""
-                      className="-mx-6 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-              <CarouselItem>
-                <Card className="md:w-[856px] md:h-[481px] object-cover  border-none">
-                  <CardContent>
-                    <img
-                      src="/images/comprof5.jpg"
-                      alt=""
-                      className="-mx-6 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-              <CarouselItem>
-                <Card className="md:w-[856px] md:h-[481px] border-none">
-                  <CardContent>
-                    <img
-                      src="/images/comprof6.jpg"
-                      alt=""
-                      className="-mx-6 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-              <CarouselItem>
-                <Card className="md:w-[856px] md:h-[481px] border-none">
-                  <CardContent>
-                    <img
-                      src="/images/comprof7.jpg"
-                      alt=""
-                      className="-mx-6 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-              <CarouselItem>
-                <Card className="md:w-[856px] md:h-[481px] border-none">
-                  <CardContent>
-                    <img
-                      src="/images/comprof8.jpg"
-                      alt=""
-                      className="-mx-6 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-              <CarouselItem>
-                <Card className="md:w-[856px] md:h-[481px] border-none">
-                  <CardContent>
-                    <img
-                      src="/images/comprof9.jpg"
-                      alt=""
-                      className="-mx-4 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-              <CarouselItem>
-                <Card className="md:w-[856px] md:h-[481px] border-none">
-                  <CardContent>
-                    <img
-                      src="/images/comprof10.jpg"
-                      alt=""
-                      className="mx-6 object-cover md:w-[856px] md:h-[481px] rounded-lg border-none"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
+    <div className="w-[80%] mx-auto">
+      <div className=" flex flex-col mx-auto w-[80%] justify-center items-center min-h-screen overflow-hidden">
+        <div className="relative p-4 md:p-10 md:px-20 flex flex-col gap-4 mx-auto bg-gradient-to-br from-[#D1D1FA] via-[#7374C5] to-[#F7A1A4] rounded-lg">
+          <div className="">
+            <h2 className="text-white xt-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold ">
+              Company Profile
+            </h2>
+          </div>
+          <div className="w-full">
+            <Carousel className="w-full basis-0">
+              <CarouselContent>
+                {images.map((image, i) => {
+                  return (
+                    <CarouselItem key={i}>
+                      <Image
+                        src={image}
+                        alt=""
+                        width={1000}
+                        height={700}
+                        className=" w-full aspect-video rounded-lg "
+                      />
+                    </CarouselItem>
+                  );
+                })}
+              </CarouselContent>
+              <CarouselPrevious hidden className="hidden md:flex" />
+              <CarouselNext hidden className="hidden md:flex" />
+            </Carousel>
+          </div>
         </div>
       </div>
     </div>

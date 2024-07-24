@@ -14,7 +14,7 @@ const Stats = () => {
     <div className="bg-[#FAF7F7] ">
       <div className="flex flex-col w-[80%] min-h-screen mx-auto justify-center items-center gap-4">
         <div className="w-full block text-start">
-          <h4 className="text-[#ED3237] text-start text-sm sm:text-base md:text-lg lg:text-2xl  font-semibold">
+          <h4 className="text-[#ED3237] text-start text-sm sm:text-base md:text-lg lg:text-xl  font-semibold">
             KEAHLIAN KAMI
           </h4>
         </div>

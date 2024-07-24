@@ -26,12 +26,12 @@ export default function Navbar() {
             className="w-14"
           />
 
-          <div className="flex flex-col gap-0 items-start justify-center">
+          <div className="flex flex-col gap-0 items-start justify-center text-sm sm:text-base md:text-lg lg:text-xl">
             <h5 className="font-bold">PT. Cahaya Dua Berlian</h5>
             <p>Konstruksi & Percetakan</p>
           </div>
         </Link>
-        <div className="md:flex w-full justify-end items-center gap-4  hidden">
+        <div className="md:flex w-full justify-end items-center gap-2  hidden text-sm sm:text-base md:text-lg lg:text-xl">
           <Link
             href={"/produk-kami"}
             className="hover:underline-offset-8 hover:underline"
