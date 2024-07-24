@@ -7,8 +7,8 @@ import Slideshow from "@/components/slideshow";
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* <Banner />
-      <OurSpeciality />
+      <Banner />
+      {/* <OurSpeciality />
       <Stats />
       <Wcu />
       <Slideshow />

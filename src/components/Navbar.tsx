@@ -5,30 +5,33 @@ import Link from "next/link";
 import * as React from "react";
 
 export default function Navbar() {
-  const [isPressed, setIsPressed] = React.useState(true);
+  const [isPressed, setIsPressed] = React.useState(false);
 
   const handleClickButton = () => {
     setIsPressed(!isPressed);
   };
 
   return (
-    <header className="py-4 w-full shadow-lg z-[100] sticky top-0">
-      <div className="flex justify-between items-center mx-auto w-[90%] max-h-24 ">
-        <Link href={"/"} className="flex gap-2">
+    <header className="py-4 w-full bg-white  shadow-lg z-[100] sticky top-0">
+      <div className="flex justify-between items-center  mx-auto w-[90%] max-h-24 ">
+        <Link
+          href={"/"}
+          className="flex w-full gap-2 items-center justify-start"
+        >
           <Image
             src="/cdb.png"
             alt={"logo"}
-            width={67}
+            width={65}
             height={45}
-            className="w-fit"
+            className="w-14"
           />
 
-          <div className="flex flex-col gap-1 items-start justify-center">
+          <div className="flex flex-col gap-0 items-start justify-center">
             <h5 className="font-bold">PT. Cahaya Dua Berlian</h5>
             <p>Konstruksi & Percetakan</p>
           </div>
         </Link>
-        <div className="md:flex justify-center items-center gap-2 md:gap-4 hidden">
+        <div className="md:flex w-full justify-end items-center gap-2  hidden">
           <Link
             href={"/produk-kami"}
             className="hover:underline-offset-8 hover:underline"
@@ -73,7 +76,7 @@ export default function Navbar() {
           <div
             className={`absolute ${
               isPressed ? "flex" : "hidden"
-            } top-24 right-0 flex-col w-full p-10 gap-4 background-white bg-[#1F204C]`}
+            } top-20 right-0 flex-col w-full p-10 gap-4 background-white bg-[#1F204C]`}
           >
             <Link href={"/produk-kami"} className="btn  w-full">
               Produk kami

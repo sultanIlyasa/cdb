@@ -4,16 +4,16 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#1F204C] text-white">
+    <footer className="w-full bg-[#1F204C] text-white shadow-lg">
       <div className="flex w-[90%] flex-col mx-auto py-10 gap-4">
-        <div className="flex gap-4">
-          <Link href={"/"} className="flex gap-4">
+        <div className="flex w-full gap-4">
+          <Link href={"/"} className="flex w-full gap-4">
             <Image
               src="/cdb.png"
               alt={"logo"}
               width={67}
               height={45}
-              className="w-fit"
+              className="w-14"
             />
 
             <div className="flex flex-col gap-1 items-start justify-center">
@@ -23,13 +23,15 @@ const Footer = () => {
           </Link>
         </div>
         <div className="flex w-full flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex flex-col gap-4">
-            <p>Phone : 021-89452944</p>
-            <p>Address : Jln. Letnan Marsaid II No 14. Margajaya, Bekasi </p>
-            <p>Email : marketing@cahayaduaberlian.com</p>
+          <div className="flex flex-col gap-4 w-full text-start">
+            <ul className="flex flex-col gap-4 text-start w-full">
+              <li>Phone : 021-89452944</li>
+              <li>Address : Jln. Letnan Marsaid II No 14. Margajaya, Bekasi</li>
+              <li>Email : marketing@cahayaduaberlian.com</li>
+            </ul>
           </div>
-          <div className="flex flex-col">
-            <ul className="flex flex-col gap-4">
+          <div className="flex flex-col w-full py-2">
+            <ul className="flex flex-col gap-4 text-start w-full md:text-end">
               <li className="hover:underline">
                 <Link href="/">
                   <span>Home</span>

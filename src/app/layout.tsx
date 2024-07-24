@@ -8,10 +8,13 @@ import WhatsAppButton from "@/components/whatsapp-btn";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Cahaya Dua Berlian",
+  title: {
+    template: `%s | Cahaya Dua Berlian`,
+    default: "Cahaya Dua Berlian",
+  },
   description: "Website Cahaya Dua Berlian",
   icons: {
-    icon: "./cdb.png",
+    icon: "/cdb.png",
   },
 };
 
