@@ -1,7 +1,7 @@
 import { OurSpeciality } from "@/components/home/OurSpeciality";
 import Stats from "@/components/home/Stats";
 import Faq from "@/pages/faq";
-import Wcu from "@/pages/wcu/WCU";
+import Wcu from "@/components/home/WCU";
 import { Banner } from "@/components/home/Banner";
 import Slideshow from "@/components/slideshow";
 export default function Home() {
