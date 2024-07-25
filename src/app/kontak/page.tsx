@@ -16,17 +16,64 @@ const KontakPage = () => {
 
   const handleChange = (e: { target: { name: any; value: any } }) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
+    setFormData((prevData) => ({
+      ...prevData,
       [name]: value,
-    });
-  };
+    }));
+  }
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
+ const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    // Handle form submission here (e.g., send data to server)
+
+    const sender = {
+        nameDepan: formData.namaDepan,
+        nameBelakang : formData.namaBelakang,
+        address: formData.email,
+    };
+
+    const recipients = {
+        name: "CDB",
+        address: "CDB@gmail.com"
+    };
+
+    const subject = "Kontak Email Cahaya Dua Berlian";
+    const message = `
+      Nomor Telepon: ${formData.nomorTelephone}
+      Jasa: ${formData.jasa}
+      Pesan: ${formData.pesan}
+    `;
+
+    fetch('/api/kirim-kontak-email', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ sender, recipients, subject, message })
+    })
+        .then(response => response.json())
+        .then(data => setFormData(data))
+        .catch(error => setFormData(error));
+
     console.log("Form submitted:", formData);
-  };
+
+    setFormData({
+      namaDepan: "",
+      namaBelakang: "",
+      email: "",
+      nomorTelephone: "",
+      jasa: "",
+      pesan: "",
+    });
+    resetRadioButtons();
+};
+
+function resetRadioButtons() {
+  const radioButtons = document.querySelectorAll('input[type="radio"]') as NodeListOf<HTMLInputElement>;
+  radioButtons.forEach(radioButton => {
+    radioButton.checked = false;
+  });
+}
+
   return (
     <main>
       <div className="flex flex-col min-h-screen justify-center items-center mx-auto w-[80%] gap-10">
