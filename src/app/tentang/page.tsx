@@ -1,6 +1,14 @@
 import Slideshow from "@/components/slideshow";
+import { Pelanggans } from "@/lib/data";
 import Image from "next/image";
 import React from "react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const page = () => {
   return (
@@ -91,6 +99,58 @@ const page = () => {
         </div>
       </div>
       <Slideshow />
+      <div className="bg-[#EDEDF8]">
+        <div className="flex flex-col min-h-screen justify-center items-center mx-auto w-[80%] gap-10">
+          <div className="text-center  flex flex-col gap-4">
+            <h2 className="text-[#7374C5] text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">
+              Testimoni Pelanggan
+            </h2>
+          </div>
+          {Pelanggans.length > 0 && (
+            <div className="w-full mx-auto">
+              <Carousel
+                className="w-full lg:w-[80%] mx-auto basis-0 rounded-xl"
+                opts={{ loop: true }}
+              >
+                <CarouselContent>
+                  {Pelanggans.map((pelanggan, i) => {
+                    return (
+                      <CarouselItem
+                        key={i}
+                        className="grid grid-cols-1 md:grid-cols-2 gap-10 "
+                      >
+                        <div className="p-10 bg-[#1F204C] rounded-xl">
+                          <Image
+                            src={pelanggan.foto}
+                            alt=""
+                            width={500}
+                            height={500}
+                            className=" w-full h-full aspect-square object-cover rounded-xl "
+                          />
+                        </div>
+                        <div className="p-10 bg-white rounded-xl flex flex-col gap-4">
+                          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">
+                            {pelanggan.judul}
+                          </h1>
+                          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-justify">
+                            {pelanggan.deskripsi}
+                          </p>
+                          <h5 className="text-sm sm:text-base md:text-lg lg:text-xl">
+                            {pelanggan.nama},{" "}
+                            <span className="text-[#ED3237]">
+                              {pelanggan.perusahaan} ({pelanggan.tahun})
+                            </span>
+                          </h5>
+                        </div>
+                      </CarouselItem>
+                    );
+                  })}
+                </CarouselContent>
+              </Carousel>
+            </div>
+          )}
+        </div>
+      </div>
     </main>
   );
 };

@@ -169,7 +169,7 @@ export const Pelanggans: pelanggan[] = [
   },
   {
     nama: "Jane Smith",
-    foto: "/client2.png",
+    foto: "/client1.png",
     perusahaan: "ABC Company",
     tahun: "2023",
     judul: "text",
