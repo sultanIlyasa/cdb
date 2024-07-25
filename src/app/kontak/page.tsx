@@ -26,8 +26,6 @@ const KontakPage = () => {
     e.preventDefault();
 
     const sender = {
-        nameDepan: formData.namaDepan,
-        nameBelakang : formData.namaBelakang,
         address: formData.email,
     };
 
@@ -38,9 +36,13 @@ const KontakPage = () => {
 
     const subject = "Kontak Email Cahaya Dua Berlian";
     const message = `
-      Nomor Telepon: ${formData.nomorTelephone}
-      Jasa: ${formData.jasa}
-      Pesan: ${formData.pesan}
+      <div class="contact-info" style="font-family: Arial, sans-serif; color: #333; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-width: 600px; margin: auto;">
+        <h2 style="color: #007BFF; border-bottom: 2px solid #007BFF; padding-bottom: 10px; margin-bottom: 20px;">Kontak Kolaborasi</h2>
+        <p style="margin: 0; padding: 8px 0;"><strong>Nama:</strong> ${formData.namaDepan} ${formData.namaBelakang}</p>
+        <p style="margin: 0; padding: 8px 0;"><strong>Nomor HP:</strong> ${formData.nomorTelephone}</p>
+        <p style="margin: 0; padding: 8px 0;"><strong>Jasa:</strong> ${formData.jasa}</p>
+        <p style="margin: 0; padding: 8px 0;"><strong>Pesan:</strong> ${formData.pesan}</p>
+      </div>
     `;
 
     fetch('/api/kirim-kontak-email', {
