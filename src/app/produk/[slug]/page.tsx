@@ -59,7 +59,7 @@ const page = async ({ params }: { params: { slug: string } }) => {
                         alt=""
                         width={1000}
                         height={700}
-                        className=" w-full aspect-video rounded-xl "
+                        className=" w-full aspect-video object-cover rounded-xl "
                       />
                     </CarouselItem>
                   );
