@@ -44,6 +44,7 @@ const page = () => {
             className="object-cover  h-full w-full"
           />
         </div>
+        <div className="absolute inset-0 bg-[#EDEDF8]/60"></div>
       </div>
       <div className="flex flex-col min-h-screen justify-center items-center mx-auto w-[80%] gap-10">
         <div className="text-center  flex flex-col gap-4">
