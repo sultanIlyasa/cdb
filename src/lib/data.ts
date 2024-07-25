@@ -1,4 +1,4 @@
-import { Kategori, Link, Mitra } from "@/types";
+import { Kategori, Link, Mitra, pelanggan } from "@/types";
 
 export const Produks: Kategori[] = [
   {
@@ -156,4 +156,31 @@ export const Mitras: Mitra[] = [
   { url: "/images/client-12.png", label: null },
   { url: "/images/client-13.png", label: null },
   { url: "/images/client-14.png", label: null },
+];
+
+export const Pelanggans: pelanggan[] = [
+  {
+    nama: "Jhon Doe",
+    foto: "/client1.png",
+    perusahaan: "CDB",
+    tahun: "2024",
+    judul: "text",
+    deskripsi: "lorem ipsum",
+  },
+  {
+    nama: "Jane Smith",
+    foto: "/client2.png",
+    perusahaan: "ABC Company",
+    tahun: "2023",
+    judul: "text",
+    deskripsi: "lorem ipsum",
+  },
+  {
+    nama: "Michael Johnson",
+    foto: "/client1.png",
+    perusahaan: "XYZ Corporation",
+    tahun: "2022",
+    judul: "text",
+    deskripsi: "lorem ipsum",
+  },
 ];
