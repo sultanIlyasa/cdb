@@ -36,13 +36,92 @@ const KontakPage = () => {
 
     const subject = "Kontak Email Cahaya Dua Berlian";
     const message = `
-      <div class="contact-info" style="font-family: Arial, sans-serif; color: #333; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-width: 600px; margin: auto;">
-        <h2 style="color: #007BFF; border-bottom: 2px solid #007BFF; padding-bottom: 10px; margin-bottom: 20px;">Kontak Kolaborasi</h2>
-        <p style="margin: 0; padding: 8px 0;"><strong>Nama:</strong> ${formData.namaDepan} ${formData.namaBelakang}</p>
-        <p style="margin: 0; padding: 8px 0;"><strong>Nomor HP:</strong> ${formData.nomorTelephone}</p>
-        <p style="margin: 0; padding: 8px 0;"><strong>Jasa:</strong> ${formData.jasa}</p>
-        <p style="margin: 0; padding: 8px 0;"><strong>Pesan:</strong> ${formData.pesan}</p>
-      </div>
+        <div
+          style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 600px;
+            margin: auto;
+            background-color: #f0f4f8;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+          "
+        >
+          <h2
+            style="
+              color: #2c3e50;
+              text-align: center;
+              font-size: 28px;
+              margin-bottom: 30px;
+              text-transform: uppercase;
+              letter-spacing: 2px;
+            "
+          >
+            Permohonan Kerjasama 
+          </h2>
+
+          <div
+            style="
+              background-color: white;
+              padding: 25px;
+              border-radius: 8px;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            "
+          >
+            <p
+              style="
+                margin: 0;
+                padding: 12px 0;
+                border-bottom: 1px solid #e0e0e0;
+                display: flex;
+                align-items: center;
+              "
+            >
+              <span style="font-weight: bold; color: #34495e; min-width: 120px"
+                >Nama</span
+              >
+              <span style="color: #3498db"
+                >: ${formData.namaDepan} ${formData.namaBelakang}</span
+              >
+            </p>
+            <p
+              style="
+                margin: 0;
+                padding: 12px 0;
+                border-bottom: 1px solid #e0e0e0;
+                display: flex;
+                align-items: center;
+              "
+            >
+              <span style="font-weight: bold; color: #34495e; min-width: 120px"
+                >Nomor HP</span
+              >
+              <span style="color: #3498db">: ${formData.nomorTelephone}</span>
+            </p>
+            <p
+              style="
+                margin: 0;
+                padding: 12px 0;
+                border-bottom: 1px solid #e0e0e0;
+                display: flex;
+                align-items: center;
+              "
+            >
+              <span style="font-weight: bold; color: #34495e; min-width: 120px"
+                >Jasa</span
+              >
+              <span style="color: #3498db">: ${formData.jasa}</span>
+            </p>
+            <p
+              style="margin: 0; padding: 12px 0; display: flex; align-items: flex-start"
+            >
+              <span style="font-weight: bold; color: #34495e; min-width: 120px"
+                >Pesan</span
+              >
+              <span style="color: #3498db; flex: 1">: ${formData.pesan}</span>
+            </p>
+          </div>
+        </div>
     `;
 
     fetch('/api/kirim-kontak-email', {
