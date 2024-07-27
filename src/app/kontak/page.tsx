@@ -2,9 +2,11 @@
 import { InfiniteMovingCards } from "@/components/ui/InfiniteMovingCards";
 import { Mitras, Produks } from "@/lib/data";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { ChangeEvent, useState } from "react";
 
 const KontakPage = () => {
+  const [isPending, setPending] = useState(false);
+  const [message, setMessage] = useState("");
   const [formData, setFormData] = useState({
     namaDepan: "",
     namaBelakang: "",
@@ -12,21 +14,167 @@ const KontakPage = () => {
     nomorTelephone: "",
     jasa: "",
     pesan: "",
+    attachment: null as File | null,
   });
 
-  const handleChange = (e: { target: { name: any; value: any } }) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
+    setFormData((prevData) => ({
+      ...prevData,
       [name]: value,
-    });
+    }));
   };
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
-    e.preventDefault();
-    // Handle form submission here (e.g., send data to server)
-    console.log("Form submitted:", formData);
+  const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0] || null;
+    setFormData((prevData) => ({
+      ...prevData,
+      attachment: file,
+    }));
   };
+
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+
+    setPending(true);
+
+    const sender = {
+      address: formData.email,
+    };
+
+    const recipients = {
+      name: "CDB",
+      address: "CDB@gmail.com",
+    };
+
+    const subject = "Kontak Email Cahaya Dua Berlian";
+    const message = `
+  <div
+    style="
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 100%;
+      margin: auto;
+      background-color: #f0f4f8;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    "
+  >
+    <h2
+      style="
+        color: #2c3e50;
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      "
+    >
+      Permohonan Kerjasama
+    </h2>
+
+    <div
+      style="
+        background-color: white;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      "
+    >
+      <p
+        style="
+          margin: 0;
+          padding: 12px 0;
+          border-bottom: 1px solid #e0e0e0;
+          display: flex;
+          align-items: center;
+        "
+      >
+        <span style="font-weight: bold; color: #34495e; min-width: 120px">Nama</span>
+        <span style="color: #3498db">: ${formData.namaDepan} ${formData.namaBelakang}</span>
+      </p>
+      <p
+        style="
+          margin: 0;
+          padding: 12px 0;
+          border-bottom: 1px solid #e0e0e0;
+          display: flex;
+          align-items: center;
+        "
+      >
+        <span style="font-weight: bold; color: #34495e; min-width: 120px">Nomor HP</span>
+        <span style="color: #3498db">: ${formData.nomorTelephone}</span>
+      </p>
+      <p
+        style="
+          margin: 0;
+          padding: 12px 0;
+          border-bottom: 1px solid #e0e0e0;
+          display: flex;
+          align-items: center;
+        "
+      >
+        <span style="font-weight: bold; color: #34495e; min-width: 120px">Jasa</span>
+        <span style="color: #3498db">: ${formData.jasa}</span>
+      </p>
+      <p
+        style="margin: 0; padding: 12px 0; display: flex; align-items: flex-start"
+      >
+        <span style="font-weight: bold; color: #34495e; min-width: 120px">Pesan</span>
+        <span style="color: #3498db; flex: 1">: ${formData.pesan}</span>
+      </p>
+    </div>
+  </div>
+`;
+
+    const formDataToSend = new FormData();
+    formDataToSend.append("sender", JSON.stringify(sender));
+    formDataToSend.append("recipients", JSON.stringify(recipients));
+    formDataToSend.append("subject", subject);
+    formDataToSend.append("message", message);
+
+    if (formData.attachment) {
+      formDataToSend.append("attachment", formData.attachment);
+    }
+
+    const response = await fetch("/api/kirim-kontak-email", {
+      method: "POST",
+      body: formDataToSend,
+    })
+      .then((response) => {
+        if (response.ok) {
+          setMessage("Email telah terkirim");
+        } else {
+          setMessage("Email tidak terikirm");
+        }
+      })
+      .catch((error) => setFormData(error));
+
+    setPending(false);
+
+    setFormData({
+      namaDepan: "",
+      namaBelakang: "",
+      email: "",
+      nomorTelephone: "",
+      jasa: "",
+      pesan: "",
+      attachment: null,
+    });
+    resetRadioButtons();
+  };
+
+  function resetRadioButtons() {
+    const radioButtons = document.querySelectorAll(
+      'input[type="radio"]'
+    ) as NodeListOf<HTMLInputElement>;
+    radioButtons.forEach((radioButton) => {
+      radioButton.checked = false;
+    });
+  }
+
   return (
     <main>
       <div className="flex flex-col min-h-screen justify-center items-center mx-auto w-[80%] gap-10">
@@ -94,6 +242,11 @@ const KontakPage = () => {
               </div>
             </div>
             <div className="p-10 w-full">
+              {message && (
+                <div className="flex w-full bg-green-500 p-4 rounded-xl text-white mb-4">
+                  <p>{message}</p>
+                </div>
+              )}
               <form
                 onSubmit={handleSubmit}
                 className="flex flex-col gap-4 w-full"
@@ -181,6 +334,22 @@ const KontakPage = () => {
                   ))}
                 </div>
                 <div className="flex flex-col">
+                  <label htmlFor="attachment" className="font-bold">
+                    Attachment
+                  </label>
+                  <input
+                    type="file"
+                    name="attachment"
+                    id="attachment"
+                    placeholder="example@mail.com"
+                    // value={formData.attachment == null ?? : ""}
+                    onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                      handleFileChange(e)
+                    }
+                    className="py-4 px-2 bg-transparent text-[#000000] text-sm border-b border-[#8D8D8D]"
+                  />
+                </div>
+                <div className="flex flex-col">
                   <label htmlFor="pesan" className="font-bold">
                     Pesan
                   </label>
@@ -195,6 +364,7 @@ const KontakPage = () => {
                 </div>
                 <div className="flex w-full items-center justify-end">
                   <button
+                    disabled={isPending}
                     type="submit"
                     className="w-full text-white md:w-fit bg-[#3B71CA] hover:bg-blue-800 focus:ring-4 focus:outline-none font-bold focus:ring-blue-300 py-4 px-8 rounded-xl text-base sm:text-lg md:text-xl"
                   >
