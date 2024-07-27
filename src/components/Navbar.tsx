@@ -32,12 +32,12 @@ export default function Navbar() {
             <p>Konstruksi & Percetakan</p>
           </div>
         </Link>
-        <div className="md:flex w-full justify-end items-center gap-4 hidden text-sm sm:text-base md:text-lg lg:text-xl">
+        <div className="md:flex w-full justify-end items-center gap-2 lg:gap-6 hidden md:text-xs lg:text-xl">
           {Links.map((link, i) => (
             <Link
               key={i}
               href={link.url}
-              className="hover:underline-offset-8 hover:underline text-sm sm:text-base md:text-lg lg:text-xl"
+              className="hover:underline-offset-8 hover:underline md:text-base lg:text-xl"
             >
               {link.label}
             </Link>

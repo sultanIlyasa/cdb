@@ -13,13 +13,20 @@ import {
 const page = () => {
   return (
     <main className="min-h-screen ">
-      <div className="relative flex flex-col min-h-screen justify-center items-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 mx-auto w-[80%] z-10">
-          <div className="flex-col flex gap-10">
-            <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">
+      <div className="flex flex-col items-center justify-center w-full h-full">
+        <div className="grid grid-cols-1 min-h-screen md:grid-cols-2 gap-10 h-full w-full md:order-last">
+          <Image
+            src={"/profile.png"}
+            alt=""
+            width={1000}
+            height={1000}
+            className="object-cover h-full w-full"
+          />
+          <div className="flex-col flex gap-10 md:ps-[calc(10%)] md:w-full mx-auto w-[80%] justify-center items-center md:order-first">
+            <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-center md:text-start w-full">
               PT. CAHAYA DUA BERLIAN
             </h1>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-justify">
               Perusahaan kami berdiri sejak tahun 2007 dengan cakupan pasar yang
               meliputi industri manufaktur, perkantoran, pendidikan, lembaga
               pemerintah, dan ritel. Saat ini, tidak kurang dari 20 perusahaan
@@ -35,16 +42,6 @@ const page = () => {
             </p>
           </div>
         </div>
-        <div className="absolute h-full  z-0 right-0 top-0">
-          <Image
-            src={"/profile.png"}
-            alt=""
-            width={1000}
-            height={1000}
-            className="object-cover  h-full w-full"
-          />
-        </div>
-        <div className="absolute inset-0 bg-[#EDEDF8]/60"></div>
       </div>
       <div className="flex flex-col min-h-screen justify-center items-center mx-auto w-[80%] gap-10">
         <div className="text-center  flex flex-col gap-4">
