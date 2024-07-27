@@ -47,19 +47,19 @@ export function OurSpeciality() {
             <div className="flex flex-col items-start gap-2">
               <Link
                 className="text-[#ED3237] text-sm sm:text-base md:text-lg lg:text-xl hover:underline  block font-semibold"
-                href="/product-design-indoor"
+                href="/produk/design-&-konstruksi-indoor"
               >
                 Desain & Konstruksi Indoor
               </Link>
               <Link
                 className="text-[#ED3237] text-sm sm:text-base md:text-lg lg:text-xl hover:underline  block font-semibold"
-                href="/product-instalasi"
+                href="/produk/instalasi"
               >
                 Instalasi
               </Link>
               <Link
                 className="text-[#ED3237] text-sm sm:text-base md:text-lg lg:text-xl hover:underline  block font-semibold"
-                href="/product"
+                href="/produk"
               >
                 Tampilkan Lebih Banyak
               </Link>
@@ -67,7 +67,7 @@ export function OurSpeciality() {
           </CardContent>
         </Card>
 
-        <Card className="flex flex-col justify-evenly gap-4 w-full rounded-2xl bg-[#FDECED] border-none">
+        <Card className="flex flex-col justify-evenly gap-4 w-full rounded-2xl bg-[#DBDBF0] border-none">
           <CardHeader className="gap-2">
             <CardTitle className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#1F204C] font-bold">
               Percetakan
@@ -90,19 +90,19 @@ export function OurSpeciality() {
             <div className="flex flex-col items-start gap-2">
               <Link
                 className="text-[#3E4095]  text-sm sm:text-base md:text-lg lg:text-xl hover:underline  block font-semibold"
-                href="/product-perlengkapan-kantor"
+                href="/produk/perlengkapan-kantor"
               >
                 Perlengkapan Kantor
               </Link>
               <Link
                 className="text-[#3E4095] text-sm sm:text-base md:text-lg lg:text-xl hover:underline  block font-semibold"
-                href="/product-souvenir-konveksi"
+                href="/produk/souvenir-&-konveksi"
               >
                 Souvenir & Konveksi
               </Link>
               <Link
                 className="text-[#3E4095] text-sm sm:text-base md:text-lg lg:text-xl hover:underline  block font-semibold"
-                href="/product"
+                href="/produk"
               >
                 Tampilkan Lebih Banyak
               </Link>

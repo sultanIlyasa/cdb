@@ -23,12 +23,12 @@ export function Banner() {
           mewujudkan impian Anda, setiap langkah dalam prosesnya.
         </p>
         <div className="flex flex-row justify-center gap-5 ">
-          <Link href="/product">
+          <Link href="/produk">
             <button className="w-fit px-4 py-2 md:px-8 md:py-4 backdrop-blur-sm bg-[#3B71CA]  text-white text-center text-sm sm:text-base md:text-lg lg:text-xl rounded-lg relative mt-4 hover:bg-[#F3F8FF] hover:text-[#0F6FFF]">
               <span>Lihat Produk Kami</span>
             </button>
           </Link>
-          <Link href="/contact">
+          <Link href="/kontak">
             <button className="w-fit px-4 py-2 md:px-8 md:py-4 backdrop-blur-sm bg-[#3B71CA]  text-white text-center text-sm sm:text-base md:text-lg lg:text-xl rounded-lg relative mt-4 hover:bg-[#F3F8FF] hover:text-[#0F6FFF]">
               <span>Hubungi Kami</span>
             </button>

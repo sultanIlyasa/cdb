@@ -23,7 +23,7 @@ const Slideshow = () => {
   ];
 
   return (
-    <div className="w-[80%] mx-auto">
+    <div className="w-full md:w-[80%] mx-auto">
       <div className=" flex flex-col mx-auto w-[80%] justify-center items-center min-h-screen overflow-hidden">
         <div className="relative p-4 md:p-10 md:px-20 flex flex-col gap-4 mx-auto bg-gradient-to-br from-[#D1D1FA] via-[#7374C5] to-[#F7A1A4] rounded-lg">
           <div className="">
