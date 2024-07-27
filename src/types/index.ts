@@ -39,3 +39,5 @@ export type pelanggan = {
   judul: string;
   deskripsi: string;
 };
+
+
