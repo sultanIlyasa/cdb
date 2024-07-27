@@ -34,6 +34,9 @@ const page = async ({ params }: { params: { slug: string } }) => {
   }
 
   const kategori = filteredCategories[0];
+  if (!kategori) {
+    return notFound();
+  }
   const subKategori = kategori.subKategori[0];
 
   return (
