@@ -38,7 +38,7 @@ export function OurSpeciality() {
           <CardContent className="grid grid-cols-1 w-full md:grid-cols-2 gap-4 min-h-52">
             <Image
               className="rounded-xl w-full h-full object-cover "
-              src="/construction.png"
+              src="/konstruksi.png"
               alt=""
               width={166}
               height={152}
@@ -82,7 +82,7 @@ export function OurSpeciality() {
           <CardContent className="grid grid-cols-1 w-full md:grid-cols-2 gap-4 min-h-52">
             <Image
               className="rounded-xl w-full h-full object-cover"
-              src="/printing.png"
+              src="/percetakan.png"
               alt=""
               width={166}
               height={152}
