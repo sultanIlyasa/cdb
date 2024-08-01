@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/accordion";
 const Faq = () => {
   return (
-    <div className="w-[80%] mx-auto flex flex-col justify-center items-center min-h-screen space-y-10">
+    <div className="w-[80%] mx-auto flex flex-col justify-center items-center min-h-screen space-y-20">
       <div className="text-center  flex flex-col gap-4">
         <h4 className="text-[#ED3237] text-sm sm:text-base md:text-lg lg:text-xl  font-semibold">
           INFORMASI

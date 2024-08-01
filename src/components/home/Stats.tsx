@@ -11,7 +11,7 @@ import React from "react";
 
 const Stats = () => {
   return (
-    <div className="bg-[#FAF7F7] ">
+    <div className="bg-[#FAF7F7] py-20 ">
       <div className="flex flex-col w-[80%] min-h-screen mx-auto justify-center items-center gap-4">
         <div className="w-full block text-start">
           <h4 className="text-[#ED3237] text-start text-sm sm:text-base md:text-lg lg:text-xl  font-semibold">

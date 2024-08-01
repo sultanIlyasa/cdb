@@ -97,7 +97,7 @@ const page = () => {
         </div>
       </div>
       <Slideshow />
-      <div className="bg-[#EDEDF8]">
+      {/* <div className="bg-[#EDEDF8]">
         <div className="flex flex-col min-h-screen justify-center items-center mx-auto w-[80%] gap-10">
           <div className="text-center  flex flex-col gap-4">
             <h2 className="text-[#7374C5] text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">
@@ -148,7 +148,8 @@ const page = () => {
             </div>
           )}
         </div>
-      </div>
+      </div> 
+      */}
     </main>
   );
 };

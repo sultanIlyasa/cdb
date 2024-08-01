@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const WCU = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-[80%] mx-auto min-h-screen gap-10">
+    <div className="flex flex-col items-center justify-center w-[80%] mx-auto min-h-screen gap-10 py-20">
       <div className=" flex flex-col justify-center items-center w-full text-center gap-4">
         <h4 className="text-[#ED3237] text-sm sm:text-base md:text-lg lg:text-xl  font-semibold">
           BERKOLABORASI DENGAN YANG TERBAIK
